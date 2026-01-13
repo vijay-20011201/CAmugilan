@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Appointment | CA Manoj Kumar D & Associates</title>
+  <meta name="description" content="Book an appointment with CA Manoj Kumar D & Associates for professional accounting, GST registration, income tax filing, company incorporation, and business advisory services in Hosur.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+    html { scroll-behavior: smooth; }
+
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+  </style>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-700 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+<div id="navbar"></div>
+
+<!-- ================= HERO ================= -->
+<section class="relative bg-[#0f172a] text-white pt-32 pb-20 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 text-center">
+    <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4">
+      Get in Touch
+    </h1>
+    <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+      Book an appointment with our experts for professional accounting,
+      taxation, and advisory services.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FORM SECTION ================= -->
+<section class="py-20">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <div class="bg-white rounded-3xl shadow-2xl border border-slate-100 p-8 sm:p-12 relative overflow-hidden">
+
+      <!-- Decorative Accent -->
+      <div class="absolute top-0 right-0 w-64 h-64 bg-[#d4af37] opacity-5 rounded-full -mr-32 -mt-32"></div>
+
+      <h2 class="font-serif text-3xl font-bold text-[#0f172a] mb-2">
+        Book an Appointment
+      </h2>
+      <p class="text-slate-500 mb-8">
+        Fill in the details below and our team will contact you shortly.
+      </p>
+
+      <form id="appointmentForm" class="space-y-6 relative z-10">
+
+        <!-- Name -->
+        <div>
+          <label class="block text-sm font-semibold text-[#0f172a] mb-2">
+            Full Name *
+          </label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4
+                   focus:outline-none focus:ring-2 focus:ring-[#d4af37]/50"
+            placeholder="Your full name">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block text-sm font-semibold text-[#0f172a] mb-2">
+            Email Address *
+          </label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4
+                   focus:outline-none focus:ring-2 focus:ring-[#d4af37]/50"
+            placeholder="you@example.com">
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="block text-sm font-semibold text-[#0f172a] mb-2">
+            Phone Number *
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            required
+            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4
+                   focus:outline-none focus:ring-2 focus:ring-[#d4af37]/50"
+            placeholder="+91 9XXXXXXXXX">
+        </div>
+
+        <!-- Services - Custom Dropdown -->
+        <div class="relative">
+          <label class="block text-sm font-semibold text-[#0f172a] mb-2">
+            Select Service *
+          </label>
+          
+          <!-- Hidden input for form submission -->
+          <input type="hidden" name="service" id="serviceInput">
+          
+          <!-- Custom Dropdown Trigger -->
+          <div id="customDropdownTrigger" 
+               role="combobox"
+               aria-haspopup="listbox"
+               aria-expanded="false"
+               aria-label="Select a service"
+               tabindex="0"
+               class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4
+                      cursor-pointer flex items-center justify-between
+                      hover:border-[#d4af37] focus:outline-none focus:ring-2 focus:ring-[#d4af37]/50 transition-all">
+            <span id="selectedServiceText" class="text-slate-500 truncate">-- Select a Service --</span>
+            <svg id="dropdownArrow" class="h-5 w-5 text-slate-400 transition-transform duration-200 shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          
+          <!-- Custom Dropdown Options (opens UPWARD, scrollable) -->
+          <div id="customDropdownOptions" 
+               role="listbox"
+               aria-label="Service options"
+               class="hidden absolute left-0 right-0 bottom-full mb-2 bg-white border border-[#d4af37]/30 rounded-xl shadow-2xl z-50 
+                      overflow-y-auto"
+               style="max-height: 220px;">
+            <div class="py-2">
+              <div data-value="Sole Proprietorship Registration" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🏢</span> Sole Proprietorship Registration
+              </div>
+              <div data-value="GST Registration & Filing" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🧾</span> GST Registration & Filing
+              </div>
+              <div data-value="Income Tax Filing" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>📑</span> Income Tax Filing
+              </div>
+              <div data-value="Company Incorporation" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🏛️</span> Company Incorporation
+              </div>
+              <div data-value="Audit & Assurance" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>📊</span> Audit & Assurance
+              </div>
+              <div data-value="MSME Registration" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🏭</span> MSME Registration
+              </div>
+              <div data-value="Trademark Registration" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>™️</span> Trademark Registration
+              </div>
+              <div data-value="FSSAI License" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🍽️</span> FSSAI License
+              </div>
+              <div data-value="Professional Tax Registration" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>💼</span> Professional Tax Registration
+              </div>
+              <div data-value="Business Compliance Advisory" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>📋</span> Business Compliance Advisory
+              </div>
+              <div data-value="LLP Registration" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🤝</span> LLP Registration
+              </div>
+              <div data-value="One Person Company" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>👤</span> One Person Company
+              </div>
+              <div data-value="Section 8 Company" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🏫</span> Section 8 Company
+              </div>
+              <div data-value="PF Registration" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>💰</span> PF Registration
+              </div>
+              <div data-value="PT Registration" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>📜</span> PT Registration
+              </div>
+              <div data-value="Payroll Services" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>💵</span> Payroll Services
+              </div>
+              <div data-value="CFO Services" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🧠</span> CFO Services
+              </div>
+              <div data-value="Import & Export Code" class="dropdown-option px-5 py-3 text-sm hover:bg-[#d4af37]/10 hover:text-[#d4af37] cursor-pointer transition-colors flex items-center gap-3">
+                <span>🌍</span> Import & Export Code
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button
+          id="submitBtn"
+          type="submit"
+          class="w-full bg-[#0f172a] text-white font-bold py-4 rounded-xl
+                 hover:bg-[#1e293b] transition-all duration-300 disabled:opacity-60">
+          Send Message
+        </button>
+
+        <!-- Status -->
+        <p id="statusMsg" class="text-center text-sm font-medium h-6"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+  // Load Navbar & Footer
+  fetch("./components/navbar.html")
+    .then(res => res.text())
+    .then(html => navbar.innerHTML = html);
+
+  fetch("./components/footer.html")
+    .then(res => res.text())
+    .then(html => footer.innerHTML = html);
+
+  // EmailJS (initialize later)
+  // emailjs.init("YOUR_PUBLIC_KEY");
+
+  const form = document.getElementById("appointmentForm");
+  const statusMsg = document.getElementById("statusMsg");
+  const submitBtn = document.getElementById("submitBtn");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Validate service selection
+    const serviceValue = document.getElementById('serviceInput').value;
+    if (!serviceValue) {
+      statusMsg.textContent = "Please select a service.";
+      statusMsg.className = "text-center text-sm font-medium h-6 text-red-600";
+      // Highlight the dropdown
+      document.getElementById('customDropdownTrigger').classList.add('border-red-400', 'ring-2', 'ring-red-200');
+      return;
+    }
+    // Remove error highlight if present
+    document.getElementById('customDropdownTrigger').classList.remove('border-red-400', 'ring-2', 'ring-red-200');
+
+    statusMsg.textContent = "Sending request...";
+    statusMsg.className = "text-center text-sm font-medium h-6 text-[#d4af37]";
+    submitBtn.disabled = true;
+
+    /*
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
+      this
+    ).then(() => {
+      statusMsg.textContent = "Thank you! Your appointment request has been sent.";
+      statusMsg.className = "text-center text-sm font-medium h-6 text-blue-600";
+      form.reset();
+      submitBtn.disabled = false;
+    }).catch(() => {
+      statusMsg.textContent = "Something went wrong. Please try again.";
+      statusMsg.className = "text-center text-sm font-medium h-6 text-red-600";
+      submitBtn.disabled = false;
+    });
+    */
+
+    // Temporary demo simulation
+    setTimeout(() => {
+      statusMsg.textContent = "Thank you! We will contact you shortly.";
+      statusMsg.className = "text-center text-sm font-medium h-6 text-blue-600";
+      form.reset();
+      // Reset custom dropdown
+      document.getElementById('selectedServiceText').textContent = '-- Select a Service --';
+      document.getElementById('selectedServiceText').className = 'text-slate-500';
+      document.getElementById('serviceInput').value = '';
+      submitBtn.disabled = false;
+    }, 1500);
+  });
+
+  // ============================================
+  // CUSTOM DROPDOWN HANDLERS
+  // ============================================
+  const dropdownTrigger = document.getElementById('customDropdownTrigger');
+  const dropdownOptions = document.getElementById('customDropdownOptions');
+  const dropdownArrow = document.getElementById('dropdownArrow');
+  const selectedText = document.getElementById('selectedServiceText');
+  const serviceInput = document.getElementById('serviceInput');
+
+  // Helper function to toggle dropdown
+  function toggleDropdown(open) {
+    if (open === undefined) {
+      dropdownOptions.classList.toggle('hidden');
+    } else if (open) {
+      dropdownOptions.classList.remove('hidden');
+    } else {
+      dropdownOptions.classList.add('hidden');
+    }
+    
+    const isOpen = !dropdownOptions.classList.contains('hidden');
+    dropdownArrow.classList.toggle('rotate-180', isOpen);
+    dropdownTrigger.setAttribute('aria-expanded', isOpen);
+  }
+
+  // Toggle dropdown on click
+  if (dropdownTrigger) {
+    dropdownTrigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleDropdown();
+    });
+
+    // Keyboard support
+    dropdownTrigger.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleDropdown();
+      } else if (e.key === 'Escape') {
+        toggleDropdown(false);
+      }
+    });
+  }
+
+  // Handle option selection
+  if (dropdownOptions) {
+    dropdownOptions.querySelectorAll('.dropdown-option').forEach(option => {
+      option.addEventListener('click', function() {
+        const value = this.getAttribute('data-value');
+        selectedText.textContent = value;
+        selectedText.className = 'text-slate-700 truncate';
+        serviceInput.value = value;
+        toggleDropdown(false);
+        // Remove any error styling
+        dropdownTrigger.classList.remove('border-red-400', 'ring-2', 'ring-red-200');
+      });
+    });
+  }
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (dropdownOptions && !dropdownOptions.classList.contains('hidden')) {
+      if (!dropdownTrigger.contains(e.target) && !dropdownOptions.contains(e.target)) {
+        toggleDropdown(false);
+      }
+    }
+  });
+
+  // Close dropdown on Escape key (global)
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && dropdownOptions && !dropdownOptions.classList.contains('hidden')) {
+      toggleDropdown(false);
+      dropdownTrigger.focus();
+    }
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services | Mugilan Poonkundran & Co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <!-- Font Awesome CDN -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+    html { scroll-behavior: smooth; }
+
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+  </style>
+
+  <!-- Tailwind Config for Custom Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-blue-50 text-gray-800 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+<div id="navbar"></div>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="relative bg-gradient-to-br from-blue-700 to-blue-900 text-white py-32 overflow-hidden">
+  <div class="absolute inset-0 bg-black/30"></div>
+  <div class="relative max-w-7xl mx-auto px-6 text-center">
+    <h1 class="font-serif text-5xl md:text-6xl font-bold mb-6">
+      Our Services
+    </h1>
+    <p class="max-w-3xl mx-auto text-lg md:text-xl text-blue-100 mb-12 leading-relaxed">
+      Expert Chartered Accountancy services in registration, compliance, taxation, audit, and advisory — 
+      designed to empower your business growth with trust and precision.
+    </p>
+
+    <!-- SEARCH BAR -->
+    <div class="max-w-2xl mx-auto relative">
+      <input
+        id="serviceSearch"
+        type="text"
+        placeholder="Search services... (e.g., GST, Company Registration, Audit)"
+        class="w-full rounded-full px-8 py-5 text-gray-900 text-lg shadow-xl outline-none focus:ring-4 focus:ring-blue-300/50 transition-all"
+      />
+      <span class="absolute right-6 top-1/2 -translate-y-1/2 text-2xl text-gray-600">🔍</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES GRID ================= -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+
+    <!-- SERVICE CARD 1 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Proprietorship Registration">
+      <div class="relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Proprietorship Registration" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Proprietorship Registration</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Simple, cost-effective setup for individual entrepreneurs starting their business journey.</p>
+        <a href="./propretership.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 2 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Partnership Firm">
+      <div class="relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Partnership Firm" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Partnership Firm Registration</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Seamless registration and management for businesses run by multiple partners.</p>
+        <a href="../partnershipfirm.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 3 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="LLP Registration">
+      <div class="relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="LLP Registration" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">LLP Registration</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Limited liability protection with the flexibility of a partnership structure.</p>
+        <a href="./llpregistration.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 4 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Private Limited Company">
+      <div class="relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Private Limited Company" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Private Limited Company Registration</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Professional corporate entity ideal for scalable businesses and fundraising.</p>
+        <a href="./privatelimited.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 5 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="One Person Company">
+      <div class="relative overflow-hidden">
+        <img src="./assets/value.jpg" alt="One Person Company" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">One Person Company (OPC)</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Corporate benefits for solo entrepreneurs with limited liability.</p>
+        <a href="./onepersoncompany.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 6 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="GST Registration">
+      <div class="relative overflow-hidden">
+        <img src="./assets/hero1.jpg" alt="GST Registration" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">GST Registration & Filing</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Complete GST compliance, returns filing, and advisory services.</p>
+        <a href="../gstregistration.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 7 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Income Tax Filing">
+      <div class="relative overflow-hidden">
+        <img src="./assets/hero2.avif" alt="Income Tax Filing" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Income Tax Filing & Audit</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Hassle-free ITR filing and statutory tax audit for individuals & businesses.</p>
+        <a href="./incometax.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 8 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/section8.jfif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Section 8 Company</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Statutory, internal, and tax audits ensuring compliance and transparency.</p>
+        <a href="./section8.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 9 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="MSME Registration">
+      <div class="relative overflow-hidden">
+        <img src="./assets/msme.jfif" alt="MSME Registration" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">MSME / Udyam Registration</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Unlock government benefits and priority lending for your small business.</p>
+        <a href="./msme.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+     <!-- SERVICE CARD 10 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/company.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Startup Company</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Choose the right business structure and register your startup in India's Silicon Valley with expert guidance from MKDA</p>
+        <a href="./assets/company.avif" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+        <!-- SERVICE CARD 11 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/hero2.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Food Licence</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Mandatory food safety license for all food businesses in India. Hassle-free FSSAI registration with expert guidance from MKDA.</p>
+        <a href="./assets/hero2.avif" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+        <!-- SERVICE CARD 12 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/certificate.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Tax Residence certificate</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Certificate from Income Tax Authority verifying tax residency for DTAA benefits. Obtain quickly with expert assistance from MKDA.</p>
+        <a href="./assets/certificate.avif" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+        <!-- SERVICE CARD 13 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/acc.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Accounting Outsourcing and Payroll Services</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Effortless accounting and payroll management with expert guidance from MKDA. Streamline your business operations with our reliable services.</p>
+        <a href="./acc&outfirm.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+       <!-- SERVICE CARD 14 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/tds.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Lower TDS Returns</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Lower your TDS liability with expert guidance from MKDA. Optimize your tax compliance with our tailored solutions.</p>
+        <a href="./lowertds.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+       <!-- SERVICE CARD 15 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/imex.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Import & Export Code</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Mandatory 10-digit code for importing/exporting goods in India.</p>
+        <a href="./importexport.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+       <!-- SERVICE CARD 16 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/cfo.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">CFO Services</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Hire a dedicated CFO to manage your financial operations with expert guidance from MKDA.</p>
+        <a href="./cfoservice.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+       <!-- SERVICE CARD 17 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/payroll.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Payroll Services</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Effortless payroll processing with expert guidance from MKDA. Manage your team's payroll with ease.</p>
+        <a href="./payroll.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+       <!-- SERVICE CARD 18 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/shop.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Shop & Establishment Audit</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Mandatory registration for shops and commercial establishments in Karnataka.</p>
+        <a href="./shop&est.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 19 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/pf.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">PF Registration</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Register your company's Provident Fund with expert guidance from MKDA. Ensure compliance and secure your employees' benefits.</p>
+        <a href="./pfregistration.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 20 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/hero2.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">PT Registration</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Register your company's Professional Tax with expert guidance from MKDA. Ensure compliance and secure your business operations.</p>
+        <a href="./ptregistration.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SERVICE CARD 21 -->
+    <div class="service-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500" data-title="Audit and Assurance">
+      <div class="relative overflow-hidden">
+        <img src="./assets/it.avif" alt="Audit & Assurance" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      <div class="p-8">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Secretarial Services</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">Expert assistance for AGM, ROC filings, RBI compliance, FDI, ESOP, director changes, share transfers, and company closure in India.</p>
+        <a href="./secretarial.html" class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition">
+          Learn More <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Add more cards following the same pattern if you have additional services -->
+
+  </div>
+
+  <!-- NO RESULTS MESSAGE -->
+  <p id="noResults" class="hidden text-center text-gray-500 text-lg mt-16">
+    No services found matching your search. Please try different keywords.
+  </p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="assets/js/loader.js"></script>
+<script>
+  // Live Search Functionality
+  const searchInput = document.getElementById("serviceSearch");
+  const cards = document.querySelectorAll(".service-card");
+  const noResults = document.getElementById("noResults");
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const title = card.dataset.title.toLowerCase();
+      const matches = title.includes(query);
+      card.classList.toggle("hidden", !matches);
+      if (matches) visibleCount++;
+    });
+
+    noResults.classList.toggle("hidden", visibleCount > 0);
+  });
+</script>
+
+</body>
+</html>
+
+

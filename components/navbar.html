@@ -1,0 +1,516 @@
+<!-- ================= TOP BAR ================= -->
+<div class="fixed top-0 left-0 w-full bg-blue-700 text-white text-xs sm:text-sm z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex justify-between items-center">
+    <div class="flex gap-3 sm:gap-6">
+      <span class="hidden sm:inline">📞 8870336446</span>
+      <span class="sm:hidden">📞 8870336446</span>
+      <span class="hidden sm:inline">✉️ camugilan.in@gmail.com</span>
+    </div>
+    <span class="hidden sm:inline">📍 Kumudepalli,Hosur</span>
+    <span class="sm:hidden">📍 Kumudepalli Hosur</span>
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-[32px] sm:top-[36px] left-0 w-full bg-white shadow z-40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 sm:h-20">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 sm:gap-3">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 bg-blue-700 text-white rounded-lg flex items-center justify-center font-bold text-sm sm:text-base">
+          CA
+        </div>
+        <div class="leading-tight">
+          <h1 class="font-bold text-sm sm:text-lg">Mugilan Poonkundran & Co</h1>
+          <p class="text-xs text-gray-500 hidden sm:block">Chartered Accountant</p>
+        </div>
+      </a>
+
+      <!-- Center Menu (Desktop) -->
+      <div class="hidden lg:flex items-center gap-8 font-medium text-gray-700">
+        <a href="index.html" class="hover:text-blue-700 transition">Home</a>
+        <a href="./aboutus.html" class="hover:text-blue-700 transition">About</a>
+
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-blue-700 transition py-4">
+            Services
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+
+          <!-- Mega Menu - NO GAP, uses pt-4 inside for visual spacing -->
+          <div class="absolute left-1/2 -translate-x-1/2 top-full pt-0
+                     w-[800px] opacity-0 invisible 
+                     group-hover:opacity-100 group-hover:visible 
+                     transition-all duration-300 z-50">
+            
+            <!-- Invisible bridge to prevent hover break -->
+            <div class="h-2"></div>
+            
+            <div class="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 sm:p-8">
+              <!-- Decorative top bar -->
+              <div class="absolute top-2 left-0 right-0 mx-auto w-[calc(100%-48px)] h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
+              
+              <div class="grid grid-cols-3 gap-6 text-sm mt-2">
+
+                <!-- Registration -->
+                <div>
+                  <h4 class="font-bold text-blue-700 mb-3 uppercase text-xs tracking-wider">Registration Services</h4>
+                  <ul class="space-y-2">
+                    <li><a href="./propretership.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Proprietorship</a></li>
+                    <li><a href="../partnershipfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👥 Partnership Firm</a></li>
+                    <li><a href="./llpregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 LLP Registration</a></li>
+                    <li><a href="./privatelimited.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Pvt Ltd Company</a></li>
+                    <li><a href="./onepersoncompany.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👤 One Person Company</a></li>
+                    <li><a href="./section8.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏫 Section 8 Company</a></li>
+                    <li><a href="./startup.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🚀 Start-Up Registration</a></li>
+                    <li><a href="./foodlicence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Food License</a></li>
+                  </ul>
+                </div>
+
+                <!-- Compliance -->
+                <div>
+                  <h4 class="font-bold text-blue-700 mb-3 uppercase text-xs tracking-wider">Compliance & Filing</h4>
+                  <ul class="space-y-2">
+                    <li><a href="../gstregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧾 GST Registration</a></li>
+                    <li><a href="./taxresidence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Tax Residence Certificate</a></li>
+                    <li><a href="../acc&outfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📊 Accounting Outsourcing and Payroll Services</a></li>
+                    <li><a href="./lowertds.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📜Lower TDS Returns</a></li>
+                    <li><a href="./msme.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏭 MSME Registration</a></li>
+                    <li><a href="./importandexport.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🌍 Import & Export Code</a></li>
+                    
+                  </ul>
+                </div>
+
+                <!-- Advisory -->
+                <div>
+                  <h4 class="font-bold text-blue-700 mb-3 uppercase text-xs tracking-wider">Advisory Services</h4>
+                  <ul class="space-y-2">
+                    <li><a href="./cfoservice.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧠 CFO Services</a></li>
+                    <li><a href="./payroll.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">💼 Payroll Services</a></li>
+                    <li><a href="./incometax.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📑 Income Tax Audit</a></li>
+                    <li><a href="../shop&est.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏪 Shop & Establishment</a></li>
+                    <li><a href="./pfregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 PF Registration</a></li>
+                    <li><a href="./ptregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 PT Registration</a></li>
+                    <li><a href="./secretarial.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📋 Secretarial Services</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
+        
+        
+          <!-- Government Links Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-blue-700 transition py-4">
+            Gov.Official Links
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          
+          <div class="absolute left-0 top-full pt-0 w-56 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-300 z-50">
+            <div class="h-2"></div>
+            <div class="bg-white rounded-xl shadow-2xl border border-gray-100 py-3 overflow-hidden">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-400"></div>
+              <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
+                <span>🧾</span> GST Portal
+              </a>
+              <a href="https://www.incometax.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
+                <span>📑</span> Income Tax
+              </a>
+              <a href="https://foscos.fssai.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
+                <span>🍽️</span> FSSAI (Food License)
+              </a>
+              <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
+                <span>🏢</span> MCA (Company Affairs)
+              </a>
+              <a href="https://ewaybillgst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
+                <span>🚛</span> Goods and Service
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="./contact.html" class="hover:text-blue-700 transition">Contact</a>
+      </div>
+
+      <!-- Right CTA (Desktop) -->
+      <div class="hidden lg:block">
+        <button id="openConsultationModal" class="bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-800 transition shadow-lg">
+          Book Consultation
+        </button>
+      </div>
+
+      <!-- Mobile Button -->
+      <button 
+        id="menuBtn" 
+        onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+        class="lg:hidden text-2xl p-2">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE MENU ================= -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t max-h-[80vh] overflow-y-auto">
+    <div class="px-4 py-4 space-y-1">
+      <a class="block py-3 px-2 hover:bg-gray-50 rounded-lg font-medium" href="index.html">Home</a>
+      <a class="block py-3 px-2 hover:bg-gray-50 rounded-lg font-medium" href="./aboutus.html">About</a>
+
+     <!-- Mobile Services Accordion -->
+       <div>
+        <button 
+          id="mobileServiceBtn"
+          class="w-full flex justify-between items-center py-3 px-2 hover:bg-gray-50 rounded-lg font-medium">
+          Services
+          <span id="servicesArrow" class="transition-transform duration-300">▾</span>
+        </button>
+
+        <div id="mobileServices" class="hidden pl-4 pb-2 space-y-1 text-sm border-l-2 border-blue-600 ml-4 mt-2">
+          <p class="font-bold text-blue-700 pt-2 pb-1">Registration</p>
+          <a href="./propretership.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Proprietorship</a>
+          <a href="../partnershipfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👥 Partnership Firm</a>
+          <a href="./llpregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 LLP Registration</a>
+          <a href="./privatelimited.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Pvt Ltd Company</a>
+          <a href="./onepersoncompany.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👤 One Person Company</a>
+          <a href="./section8.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏫 Section 8 Company</a>
+          <a href="./startup.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🚀 Start-Up Registration</a>
+          <a href="./foodlicence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Food License</a>
+
+          <p class="font-bold text-blue-700 pt-3 pb-1">Compliance</p>
+          <a href="../gstregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧾 GST Registration</a>
+          <a href="./taxresidence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Tax Residence Certificate</a>
+          <a href="../acc&outfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📊 Accounting Outsourcing and Payroll Services</a>
+          <a href="./lowertds.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📜Lower TDS Returns</a>
+          <a href="./msme.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏭 MSME Registration</a>
+          <a href="./importandexport.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🌍 Import & Export Code</a>
+
+          <p class="font-bold text-blue-700 pt-3 pb-1">Advisory</p>
+          <a href="./cfoservice.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧠 CFO Services</a>
+          <a href="./payroll.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">💼 Payroll Services</a>
+          <a href="./incometax.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📑 Income Tax Audit</a>
+          <a href="../shop&est.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏪 Shop & Establishment</a>
+          <a href="./pfregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 PF Registration</a>
+          <a href="./ptregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 PT Registration</a>
+          <a href="./secretarial.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📋 Secretarial Services</a>
+        </div>
+      </div>
+
+       <!-- Government Links Dropdown -->
+       <div>
+        <button 
+          id="mobileGovBtn"
+          onclick="document.getElementById('mobileGovLinks').classList.toggle('hidden'); this.querySelector('span').classList.toggle('rotate-180')"
+          class="w-full flex justify-between items-center py-3 px-2 hover:bg-gray-50 rounded-lg font-medium">
+          Gov.Official Links
+          <span class="transition-transform duration-300">▾</span>
+        </button>
+      
+        <div id="mobileGovLinks" class="hidden pl-4 pb-2 space-y-1 text-sm border-l-2 border-blue-600 ml-4 mt-2">
+          <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧾 GST Portal</a>
+          <a href="https://www.incometax.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📑 Income Tax</a>
+          <a href="https://foscos.fssai.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🍽️ FSSAI (Food License)</a>
+          <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 MCA (Company Affairs)</a>
+          <a href="https://ewaybillgst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🚛 Goods and Service</a>
+        </div>
+      </div>
+      <a class="block py-3 px-2 hover:bg-gray-50 rounded-lg font-medium" href="./contact.html">Contact</a>
+
+      <div class="pt-4">
+        <button onclick="openConsultationModal()" class="block w-full bg-blue-700 text-white text-center py-3 rounded-xl font-semibold hover:bg-blue-800 transition">
+          Book Consultation
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= FREE CONSULTATION MODAL (POPUP) ================= -->
+<div id="consultationModal" class="fixed inset-0 bg-black/60 hidden z-50 flex items-center justify-center p-4 transition-opacity duration-300">
+  <div class="bg-white rounded-2xl shadow-xl border border-gray-100 max-w-lg w-full max-h-[90vh] overflow-y-auto relative scale-95 transition-transform duration-300">
+    
+    <!-- Close Button - Increased size and z-index for better accessibility -->
+    <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-3xl font-light z-50 transition-colors">&times;</button>
+
+    <!-- Header with Gradient Accent -->
+    <div class="relative bg-gradient-to-r from-blue-600 to-blue-400 p-6 rounded-t-2xl">
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-1">
+        Book a Free Consultation
+      </h2>
+      <p class="text-blue-100 text-sm sm:text-base">
+        Our experts will get in touch within 24 hours.
+      </p>
+    </div>
+
+    <div class="p-6 sm:p-8">
+      <form id="appointmentForm" class="space-y-5">
+
+        <!-- Name - With Icon -->
+        <div class="relative">
+          <label class="block text-sm font-medium text-gray-700 mb-1.5">
+            Full Name *
+          </label>
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">👤</span>
+            <input
+              type="text"
+              name="name"
+              required
+              class="w-full pl-10 bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm
+                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow"
+              placeholder="Enter your full name">
+          </div>
+        </div>
+
+        <!-- Email - With Icon -->
+        <div class="relative">
+          <label class="block text-sm font-medium text-gray-700 mb-1.5">
+            Email Address *
+          </label>
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">✉️</span>
+            <input
+              type="email"
+              name="email"
+              required
+              class="w-full pl-10 bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm
+                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow"
+              placeholder="you@example.com">
+          </div>
+        </div>
+
+        <!-- Phone - With Icon -->
+        <div class="relative">
+          <label class="block text-sm font-medium text-gray-700 mb-1.5">
+            Phone Number *
+          </label>
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">📞</span>
+            <input
+              type="tel"
+              name="phone"
+              required
+              class="w-full pl-10 bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-sm
+                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow"
+              placeholder="+91 XXXXX XXXXX">
+          </div>
+        </div>
+
+        <!-- Services - Custom Dropdown -->
+        <div class="relative">
+          <label class="block text-sm font-medium text-gray-700 mb-1.5">
+            Select Service *
+          </label>
+          
+          <!-- Hidden input for form submission -->
+          <input type="hidden" name="service" id="modalServiceInput" required>
+          
+          <!-- Custom Dropdown Trigger -->
+          <div id="modalDropdownTrigger" 
+               class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3
+                      cursor-pointer flex items-center justify-between
+                      hover:border-blue-400 transition-all text-sm">
+            <span id="modalSelectedText" class="text-gray-500">-- Select a Service --</span>
+            <svg id="modalDropdownArrow" class="h-4 w-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          
+          <!-- Custom Dropdown Options (scrollable, contained within modal) -->
+          <div id="modalDropdownOptions" 
+               class="hidden absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-xl z-[100] overflow-y-scroll"
+               style="max-height: 200px;">
+            <div class="py-1">
+              <div data-value="Sole Proprietorship Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Sole Proprietorship Registration</div>
+              <div data-value="GST Registration & Filing" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">GST Registration & Filing</div>
+              <div data-value="Income Tax Filing" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Income Tax Filing</div>
+              <div data-value="Company Incorporation" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Company Incorporation</div>
+              <div data-value="Audit & Assurance" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Audit & Assurance</div>
+              <div data-value="MSME Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">MSME Registration</div>
+              <div data-value="Trademark Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Trademark Registration</div>
+              <div data-value="FSSAI License" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">FSSAI License</div>
+              <div data-value="Professional Tax Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Professional Tax Registration</div>
+              <div data-value="Business Compliance Advisory" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Business Compliance Advisory</div>
+              <div data-value="LLP Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">LLP Registration</div>
+              <div data-value="One Person Company" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">One Person Company</div>
+              <div data-value="Section 8 Company" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Section 8 Company</div>
+              <div data-value="PF Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">PF Registration</div>
+              <div data-value="PT Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">PT Registration</div>
+              <div data-value="Payroll Services" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Payroll Services</div>
+              <div data-value="CFO Services" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">CFO Services</div>
+              <div data-value="Import & Export Code" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Import & Export Code</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button
+          id="submitBtn"
+          type="submit"
+          class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg
+                 hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50">
+          Submit Request
+        </button>
+
+        <!-- Status -->
+        <p id="statusMsg" class="text-center text-sm font-medium h-5 mt-3"></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODAL & FORM SCRIPTS ================= -->
+<script>
+  // Modal Functions
+  function openConsultationModal() {
+    const modal = document.getElementById('consultationModal');
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.querySelector('div.relative.scale-95').classList.remove('scale-95');
+      modal.classList.add('opacity-100');
+    }, 10);
+    document.body.style.overflow = 'hidden'; // Prevent body scroll
+  }
+
+  function closeConsultationModal() {
+    const modal = document.getElementById('consultationModal');
+    modal.classList.add('hidden');
+    modal.querySelector('div.relative').classList.add('scale-95');
+    document.body.style.overflow = 'auto'; // Restore body scroll
+  }
+
+  // Event Listeners
+  document.getElementById('openConsultationModal')?.addEventListener('click', openConsultationModal);
+
+  // Close button listener (fixed by direct ID reference)
+  document.getElementById('closeModalBtn')?.addEventListener('click', closeConsultationModal);
+
+  // Close modal on outside click
+  document.getElementById('consultationModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeConsultationModal();
+    }
+  });
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeConsultationModal();
+    }
+  });
+
+  // Form Submission (adapted from bookappointment.html - uses simulation; uncomment EmailJS for production)
+  const form = document.getElementById("appointmentForm");
+  const statusMsg = document.getElementById("statusMsg");
+  const submitBtn = document.getElementById("submitBtn");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      statusMsg.textContent = "Sending your request...";
+      statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-blue-600";
+      submitBtn.disabled = true;
+
+      /*
+      // Uncomment for EmailJS integration (add script tag for emailjs-com to your page head)
+      // emailjs.init("YOUR_PUBLIC_KEY");
+      emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        this
+      ).then(() => {
+        statusMsg.textContent = "Success! We'll contact you soon.";
+        statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-blue-600";
+        form.reset();
+        submitBtn.disabled = false;
+        setTimeout(closeConsultationModal, 2000); // Close modal after success
+      }).catch(() => {
+        statusMsg.textContent = "Error: Please try again later.";
+        statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-red-600";
+        submitBtn.disabled = false;
+      });
+      */
+
+      // Temporary demo simulation
+      setTimeout(() => {
+        statusMsg.textContent = "Success! We'll contact you soon.";
+        statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-blue-600";
+        form.reset();
+        // Reset custom dropdown
+        const selectedText = document.getElementById('modalSelectedText');
+        const serviceInput = document.getElementById('modalServiceInput');
+        if (selectedText) {
+          selectedText.textContent = '-- Select a Service --';
+          selectedText.className = 'text-gray-500';
+        }
+        if (serviceInput) serviceInput.value = '';
+        submitBtn.disabled = false;
+        setTimeout(closeConsultationModal, 2000); // Close modal after success
+      }, 1500);
+    });
+  }
+
+  // ============================================
+  // MODAL CUSTOM DROPDOWN HANDLERS
+  // ============================================
+  const modalDropdownTrigger = document.getElementById('modalDropdownTrigger');
+  const modalDropdownOptions = document.getElementById('modalDropdownOptions');
+  const modalDropdownArrow = document.getElementById('modalDropdownArrow');
+  const modalSelectedText = document.getElementById('modalSelectedText');
+  const modalServiceInput = document.getElementById('modalServiceInput');
+
+  // Toggle dropdown
+  if (modalDropdownTrigger) {
+    modalDropdownTrigger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      modalDropdownOptions.classList.toggle('hidden');
+      modalDropdownArrow.classList.toggle('rotate-180');
+    });
+  }
+
+  // Handle option selection
+  if (modalDropdownOptions) {
+    modalDropdownOptions.querySelectorAll('.modal-dropdown-option').forEach(option => {
+      option.addEventListener('click', function() {
+        const value = this.getAttribute('data-value');
+        modalSelectedText.textContent = value;
+        modalSelectedText.className = 'text-gray-700';
+        modalServiceInput.value = value;
+        modalDropdownOptions.classList.add('hidden');
+        modalDropdownArrow.classList.remove('rotate-180');
+      });
+    });
+  }
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (modalDropdownOptions && !modalDropdownOptions.classList.contains('hidden')) {
+      if (!modalDropdownTrigger?.contains(e.target) && !modalDropdownOptions?.contains(e.target)) {
+        modalDropdownOptions.classList.add('hidden');
+        modalDropdownArrow?.classList.remove('rotate-180');
+      }
+    }
+  });
+
+  // Reset dropdown when modal closes
+  const originalClose = closeConsultationModal;
+  closeConsultationModal = function() {
+    if (modalDropdownOptions) {
+      modalDropdownOptions.classList.add('hidden');
+      modalDropdownArrow?.classList.remove('rotate-180');
+    }
+    originalClose();
+  };
+</script>
+

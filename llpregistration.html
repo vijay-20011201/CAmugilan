@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sole Proprietorship Firm Registration | CA Manoj Kumar D & Associates</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .section-title {
+            background-image: linear-gradient(to right, #1d4ed8, #2563eb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .shadow-card {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        .shadow-hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="min-h-screen bg-white font-sans text-slate-800">
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[600px] flex items-center overflow-hidden pt-32">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="assets/hero1.jpg" alt="Business consultation" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-800/85 to-blue-700/70"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 py-20">
+            <div class="max-w-2xl">
+                <!-- Breadcrumb -->
+                <nav class="flex items-center gap-2 text-sm text-white/70 mb-6">
+                    <a href="./index.html" class="hover:text-white cursor-pointer transition-colors">Home</a>
+                    <span>/</span>
+                    <a href="./services.html" class="hover:text-white cursor-pointer transition-colors">Services</a>
+                    <span>/</span>
+                    <span class="text-blue-300">Proprietorship</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    Sole Proprietorship
+                    <span class="block text-blue-300">Firm Registration</span>
+                    <span class="block text-2xl md:text-3xl font-medium mt-2 text-white/80">in Bangalore</span>
+                </h1>
+                <p class="text-lg text-white/80 mb-8 max-w-xl">
+                    Start your business journey with the simplest form of business structure. Quick registration, minimal documentation, complete ownership.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="./bookappointment.html" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-xl">
+                        Get Started 
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                    <a href="./contact.html" class="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        Talk to Expert
+                    </a>
+                </div>
+                <!-- Stats -->
+                <div class="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/20">
+                    <div>
+                        <div class="text-3xl font-bold text-blue-300">500+</div>
+                        <div class="text-sm text-white/70">Registrations Done</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-300">7-15</div>
+                        <div class="text-sm text-white/70">Days Processing</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-300">100%</div>
+                        <div class="text-sm text-white/70">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Navigation (stick below main navbar) -->
+    <nav class="sticky top-28 sm:top-32 bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
+                <button data-section="overview" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Overview</button>
+                <button data-section="features" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Features</button>
+                <button data-section="benefits" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Benefits</button>
+                <button data-section="requirements" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Requirements</button>
+                <button data-section="documents" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Documents</button>
+                <button data-section="registrations" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Registrations</button>
+                <button data-section="process" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Process</button>
+                <button data-section="faqs" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Overview -->
+        <section id="overview" class="mb-20 max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold section-title mb-8">
+                What is Proprietorship?
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Proprietorship is a business that legally has no separate existence from its owner. The owner is an Individual him/herself personally liable for all liabilities and Income earned and losses suffered are taxed on the individual's personal income tax return.
+            </p>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="mb-20 max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl  font-bold text-gray-900 section-title mb-8">
+                Features of Sole Proprietorship
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">Single Ownership. No one else will be involved as an owner.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">The formation of a Business is very easy. It requires very few documents.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">Low Capital investment.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">The owner will conduct all tasks.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">The whole risk of the entity is liable to the owner.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">The owner will entitle profit/Loss.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">The owner is not separate from the business activities.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">The stability of the Proprietorship is not certain because, at any time, the business may wind up due to the loss or death of the owner.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">It doesn't have any separate law to govern it.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">PAN of the Proprietor and Proprietorship are the same.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">They cannot raise equity funds from Angel Investors, Venture capital, and private equity funds.</span>
+                </div>
+                <div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-card transition-all">
+                    <div class="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></div>
+                    <span class="text-gray-600">To avail a loan from the banks, the Proprietor is required to give is personal guarantee by way of pledge his own property.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="benefits" class="mb-20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl  font-bold text-gray-900 section-title mb-8">
+                    Benefits
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-hover transition-all group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Ease of Formation</h3>
+                    <p class="text-gray-600 leading-relaxed">It is less complicated because all the KYC of Individual is sufficient for the registration. No separate legal entity is formed and cheaper to start.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-hover transition-all group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Tax Benefits</h3>
+                    <p class="text-gray-600 leading-relaxed">The owner need not file a separate tax report for his business. The income tax slab applicable for individual is applicable for business as well.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-hover transition-all group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Easy Maintenance</h3>
+                    <p class="text-gray-600 leading-relaxed">There is no additional cost of annual compliance reporting to any statutory authority.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements -->
+        <section id="requirements" class="mb-20 max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl  font-bold text-gray-900 section-title mb-8">
+                Minimum Requirements
+            </h2>
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="text-gray-900 text-lg">A resident of India should start the proprietorship firm</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="text-gray-900 text-lg">Choose a business name and decide on a location to start the business.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="text-gray-900 text-lg">It can be started with a small amount of capital.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Documents -->
+        <section id="documents" class="mb-20 max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl  font-bold text-gray-900 section-title mb-8">
+                Documents Required
+            </h2>
+            <div class="grid gap-4">
+                <div class="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-all">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <span class="text-gray-900">Pan Card of Proprietor (Self attested)</span>
+                </div>
+                <div class="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-all">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <span class="text-gray-900">Identity Proof of Proprietor - Aadhar Card or DL or Voter ID or Passport (Self attested)</span>
+                </div>
+                <div class="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-all">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <span class="text-gray-900">1 Passport size photo of Proprietor.</span>
+                </div>
+                <div class="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-all">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <span class="text-gray-900">Proof of Office address (Lease Deed/ Rent Agreement)</span>
+                </div>
+                <div class="flex items-center gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-blue-300 transition-all">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <span class="text-gray-900">Copy of Latest Electricity Bill or Property Tax paid receipt of Office address.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registrations -->
+        <section id="registrations" class="mb-20 max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl  font-bold text-gray-900 section-title mb-8">
+                Registrations Required
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-card transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-blue-600-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">GST Registration</h3>
+                            <p class="text-sm text-gray-600">Mandatory for turnover above Rs. 20 Lakhs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-card transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-blue-600-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">MSME/Udyam Registration</h3>
+                            <p class="text-sm text-gray-600">For government benefits and subsidies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-card transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-blue-600-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Shop & Establishment License</h3>
+                            <p class="text-sm text-gray-600">Required for commercial establishments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-card transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-blue-600-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Professional Tax Registration</h3>
+                            <p class="text-sm text-gray-600">Mandatory in certain states</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 hover:shadow-card transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-blue-600-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Bank Account Opening</h3>
+                            <p class="text-sm text-gray-600">Current account in business name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section id="process" class="mb-20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl  font-bold text-gray-900 section-title mb-8">
+                    Registration Process
+                </h2>
+            </div>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="relative p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-card transition-all">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-blue-600-foreground font-bold text-sm">
+                            1
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mt-2 mb-2">Choose Business Name</h3>
+                        <p class="text-sm text-gray-600">Select a unique trade name</p>
+                    </div>
+                    <div class="relative p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-card transition-all">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-blue-600-foreground font-bold text-sm">
+                            2
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mt-2 mb-2">Gather Documents</h3>
+                        <p class="text-sm text-gray-600">Collect KYC and address proofs</p>
+                    </div>
+                    <div class="relative p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-card transition-all">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-blue-600-foreground font-bold text-sm">
+                            3
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mt-2 mb-2">GST Registration</h3>
+                        <p class="text-sm text-gray-600">Register for GST if applicable</p>
+                    </div>
+                    <div class="relative p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-card transition-all">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-blue-600-foreground font-bold text-sm">
+                            4
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mt-2 mb-2">MSME Registration</h3>
+                        <p class="text-sm text-gray-600">Register under Udyam</p>
+                    </div>
+                    <div class="relative p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-card transition-all">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-blue-600-foreground font-bold text-sm">
+                            5
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mt-2 mb-2">Open Bank Account</h3>
+                        <p class="text-sm text-gray-600">Current account with GST certificate</p>
+                    </div>
+                    <div class="relative p-6 bg-white rounded-2xl border border-gray-200 hover:shadow-card transition-all">
+                        <div class="absolute -top-4 left-6 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-blue-600-foreground font-bold text-sm">
+                            6
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mt-2 mb-2">Start Operations</h3>
+                        <p class="text-sm text-gray-600">Begin your business legally</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   
+       
+ <!-- FAQ -->
+<section id="faqs" class="max-w-4xl mx-auto mb-20">
+    <h2 class="text-3xl font-bold section-title mb-6">
+      Frequently Asked Questions
+    </h2>
+  
+    <div class="space-y-4">
+      <details class="border rounded-xl p-5">
+        <summary class="cursor-pointer font-semibold text-gray-900">
+          Can I register without GST?
+        </summary>
+        <p class="mt-3 text-gray-600">
+          Yes. GST is mandatory only if turnover exceeds ₹20 Lakhs, interstate supply,
+          ecommerce or online services are involved.
+        </p>
+      </details>
+  
+      <details class="border rounded-xl p-5">
+        <summary class="cursor-pointer font-semibold text-gray-900">
+          Can I register a brand name?
+        </summary>
+        <p class="mt-3 text-gray-600">
+          Yes, a brand name can be used under a proprietorship firm.
+        </p>
+      </details>
+    </div>
+  </section>
+  
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+<!-- Component Loading Script -->
+<script src="assets/js/loader.js"></script>
+<script>
+    // Page Section Navigation
+    let activeSection = 'overview';
+    const navButtons = document.querySelectorAll('nav button[data-section]');
+    const sections = document.querySelectorAll('main section[id]');
+
+    navButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const sectionId = button.dataset.section;
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                updateActiveNav(sectionId);
+            }
+        });
+    });
+
+    function updateActiveNav(sectionId) {
+        navButtons.forEach(btn => {
+            btn.classList.remove('bg-blue-600', 'text-white');
+            btn.classList.add('text-gray-500', 'hover:text-gray-900', 'hover:bg-gray-100');
+        });
+        const activeBtn = Array.from(navButtons).find(btn => btn.dataset.section === sectionId);
+        if (activeBtn) {
+            activeBtn.classList.add('bg-blue-600', 'text-white');
+            activeBtn.classList.remove('text-gray-500', 'hover:text-gray-900', 'hover:bg-gray-100');
+        }
+        activeSection = sectionId;
+    }
+
+    // Update active nav on scroll
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= sectionTop - 250) {
+                current = section.getAttribute('id');
+            }
+        });
+        if (current && current !== activeSection) {
+            updateActiveNav(current);
+        }
+    });
+
+    // FAQ Accordion
+    const faqButtons = document.querySelectorAll('button[data-faq]');
+    faqButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            const isOpen = content.classList.contains('max-h-48');
+
+            // Close all FAQs
+            faqButtons.forEach(btn => {
+                const cont = btn.nextElementSibling;
+                const ic = btn.querySelector('svg');
+                cont.classList.add('max-h-0');
+                cont.classList.remove('max-h-48');
+                ic.classList.remove('rotate-180');
+            });
+
+            // Open clicked FAQ if it was closed
+            if (!isOpen) {
+                content.classList.remove('max-h-0');
+                content.classList.add('max-h-48');
+                icon.classList.add('rotate-180');
+            }
+        });
+    });
+</script>
+</body>
+</html>
+

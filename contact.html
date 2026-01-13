@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | CA & Associates</title>
+  <!-- Tailwind via CDN (corrected URL) -->
+  <!-- Font Awesome CDN -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .font-sans { font-family: 'Inter', sans-serif; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f172a',
+            accent: '#2563eb', /* Royal Blue */
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-slate-700 font-sans">
+
+  <!-- ================= NAVBAR CONTAINER ================= -->
+  <div id="navbar"></div>
+
+  <!-- ================= HERO ================= -->
+  <section class="relative bg-blue-900 text-white overflow-hidden pt-36 pb-20">
+    <div class="absolute inset-0">
+      <img 
+        src="./assets/contact.avif" 
+        alt="Office Background" 
+        class="w-full h-full object-cover opacity-30"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-900/60 to-blue-900"></div>
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400 opacity-10 blur-[120px] rounded-full"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6 text-center">
+      <span class="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider uppercase bg-blue-500/20 border border-blue-400/30 rounded-full">
+        Get In Touch
+      </span>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+        Contact Us
+      </h1>
+      <p class="text-blue-50/90 max-w-2xl mx-auto text-lg leading-relaxed">
+        Connect with <span class="text-white font-semibold">Mugilan Poonkundran & Co</span> for professional accounting, audit, taxation, and advisory services.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT DETAILS & FORM ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid lg:grid-cols-2 gap-8">
+
+      <!-- LEFT: OFFICE DETAILS CARD -->
+      <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-10 relative overflow-hidden group hover:shadow-2xl transition-shadow duration-500">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-accent opacity-5 rounded-bl-full transition-opacity"></div>
+
+        <h2 class="font-serif text-3xl font-bold text-primary mb-6">
+          Office Information
+        </h2>
+        <p class="text-slate-600 text-lg mb-10">
+          Visit our office or reach out to us. Our team is ready to assist you with your financial and compliance needs.
+        </p>
+
+        <div class="space-y-6">
+          <!-- Address -->
+          <div class="flex gap-4 items-start">
+            <div class="w-12 h-12 shrink-0 rounded-xl bg-primary flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-primary text-lg mb-1">Office Address</p>
+              <p class="text-slate-600 leading-relaxed">
+                CA & Associates<br/>
+                No. 26/1,National Highway Service Road,<br/>
+                First Floor,(Near Tata Show Room)<br/>
+                Kumudepalli,Hosur - 635109
+                
+              </p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex gap-4 items-start">
+            <div class="w-12 h-12 shrink-0 rounded-xl bg-primary flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-primary text-lg mb-1">Phone</p>
+              <p class="text-slate-600">+91 8870336446</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="flex gap-4 items-start">
+            <div class="w-12 h-12 shrink-0 rounded-xl bg-primary flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-primary text-lg mb-1">Email</p>
+              <p class="text-slate-600">camugilan.in@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="flex gap-4 items-start">
+            <div class="w-12 h-12 shrink-0 rounded-xl bg-primary flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-primary text-lg mb-1">Working Hours</p>
+              <p class="text-slate-600">
+                Mon – Fri: 9:30 AM – 6:30 PM<br/>
+                Sat: 9:30 AM – 2:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-10">
+        <h2 class="font-serif text-3xl font-bold text-primary mb-2">
+          Get in Touch
+        </h2>
+        <p class="text-slate-600 mb-8">Fill out the form below and we'll respond within 24 hours.</p>
+
+        <form id="contactForm" class="space-y-5">
+          <div>
+            <label class="block text-sm font-semibold text-primary mb-2">Full Name *</label>
+            <input type="text" name="name" required
+              class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"/>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-primary mb-2">Email Address *</label>
+            <input type="email" name="email" required
+              class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"/>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-primary mb-2">Phone Number</label>
+            <input type="tel" name="phone" required
+              class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"/>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-primary mb-2">Subject *</label>
+            <input type="text" name="subject" required
+              class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"/>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-primary mb-2">Message *</label>
+            <textarea name="message" rows="5" 
+              class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all resize-none"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-primary text-white font-semibold py-3.5 rounded-lg shadow-md hover:bg-slate-800 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
+            <span>Submit Inquiry</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </button>
+
+          <p id="statusMsg" class="text-sm text-center font-medium min-h-[20px]"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MAP ================= -->
+  <section class="max-w-7xl mx-auto px-6 pb-20">
+    <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+      <iframe
+        class="w-full h-[450px] grayscale hover:grayscale-0 transition-all duration-500"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.938053697841!2d77.8754134!3d12.7174642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7746c772a7b1%3A0x12b47088b4b26828!2sMUGILAN%20POONKUNDRAN%20%26%20CO!5e0!3m2!1sen!2sin!4v1766134722439!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        loading="lazy"
+        style="border:0;"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER CONTAINER ================= -->
+  <div id="footer"></div>
+
+<script src="assets/js/loader.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Form handling logic logic preserved
+      const form = document.getElementById("contactForm");
+      const status = document.getElementById("statusMsg");
+
+      if (form && status) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          
+          status.textContent = "Sending your message...";
+          status.className = "text-sm text-center font-medium text-accent";
+
+          setTimeout(() => {
+            status.textContent = "Thank you! We'll get back to you within 24 hours.";
+            status.className = "text-sm text-center font-medium text-blue-600";
+            form.reset();
+
+            setTimeout(() => {
+              status.textContent = "";
+            }, 5000);
+          }, 1500);
+        });
+      }
+    });
+  </script>
+
+      
+  
+
+</body>
+</html>
+
+
