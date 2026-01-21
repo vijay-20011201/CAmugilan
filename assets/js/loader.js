@@ -276,7 +276,10 @@
       
       const cardIndex = groupIndex * cardsPerGroup;
       if (cardIndex < totalCards) {
-        cards[cardIndex].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        // Use container scroll instead of scrollIntoView to prevent page jump
+        const card = cards[cardIndex];
+        const scrollLeft = card.offsetLeft - container.offsetLeft;
+        container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
       }
       
       currentGroup = groupIndex;
