@@ -243,6 +243,85 @@
     
     // Add backup event listeners after components load
     setTimeout(addBackupListeners, 500);
+    
+    // Initialize Industries Carousel after homepage loads
+    setTimeout(initIndustriesCarousel, 100);
+  }
+
+  // ============================================
+  // INDUSTRIES CAROUSEL
+  // ============================================
+  function initIndustriesCarousel() {
+    const container = document.getElementById('scrollContainer');
+    const dots = document.querySelectorAll('.industry-dot');
+    
+    if (!container || dots.length === 0) {
+      // Retry if elements not found yet
+      setTimeout(initIndustriesCarousel, 100);
+      return;
+    }
+    
+    const cards = container.children;
+    const totalCards = cards.length;
+    const cardsPerGroup = 3;
+    const totalGroups = Math.ceil(totalCards / cardsPerGroup);
+    
+    let currentGroup = 0;
+    let autoScrollInterval;
+
+    function scrollToGroup(groupIndex) {
+      if (groupIndex >= totalGroups) {
+        groupIndex = 0;
+      }
+      
+      const cardIndex = groupIndex * cardsPerGroup;
+      if (cardIndex < totalCards) {
+        cards[cardIndex].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+      }
+      
+      currentGroup = groupIndex;
+      updateDots();
+    }
+
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        if (index === currentGroup) {
+          dot.classList.remove('bg-gray-300');
+          dot.classList.add('bg-blue-600');
+        } else {
+          dot.classList.remove('bg-blue-600');
+          dot.classList.add('bg-gray-300');
+        }
+      });
+    }
+
+    function startAutoScroll() {
+      stopAutoScroll();
+      autoScrollInterval = setInterval(() => {
+        currentGroup = (currentGroup + 1) % totalGroups;
+        scrollToGroup(currentGroup);
+      }, 4000);
+    }
+
+    function stopAutoScroll() {
+      clearInterval(autoScrollInterval);
+    }
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        stopAutoScroll();
+        scrollToGroup(index);
+        startAutoScroll();
+      });
+    });
+
+    // Pause on hover
+    container.addEventListener('mouseenter', stopAutoScroll);
+    container.addEventListener('mouseleave', startAutoScroll);
+
+    // Start auto-scroll
+    startAutoScroll();
   }
 
   // Backup direct event listeners (in case event delegation doesn't catch)

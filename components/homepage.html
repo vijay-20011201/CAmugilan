@@ -1,125 +1,90 @@
-<section class="pt-24 sm:pt-32 md:pt-40 pb-10 sm:pb-12 md:pb-20 relative">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+<!-- ================= HERO SECTION (Redesigned) ================= -->
+<section class="relative min-h-[100svh] flex items-center bg-cover bg-center bg-no-repeat"
+         style="background-image: url('./assets/hero.jpg');">
+  
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
 
-    <!-- Left -->
-    <div class="text-center lg:text-left">
-      <!-- <span class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm mb-4 sm:mb-6">
-        Trusted Chartered Accountants in Hosur
-      </span> -->
-
-      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-        Financial Clarity<br>
-        for <span class="text-blue-700">Growing</span><br>
-        <span class="text-blue-700">Businesses</span>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 w-full pt-24 sm:pt-28 pb-12">
+    <div class="max-w-3xl">
+      <!-- Title -->
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white tracking-wide leading-tight mb-4 sm:mb-6">
+        CHARTERED <br class="hidden sm:block">
+        <span class="sm:hidden"> </span>ACCOUNTANT
       </h1>
 
-      <p class="mt-4 sm:mt-6 text-sm sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0">
-        Transform your business finances with expert guidance.
-        From registration to compliance, we simplify accounting.
+      <!-- Subtitle -->
+      <p class="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-10 max-w-xl leading-relaxed font-light">
+        Expert accounting, auditing, and financial advisory services <br class="hidden md:block"> 
+        tailored for your business growth and compliance.
       </p>
 
-     
-
-      <div class="mt-6 sm:mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-        <a href="./contact.html" class="w-full sm:w-auto text-center bg-blue-700 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base hover:bg-blue-800 transition">
-          Get Started Today →
-        </a>
-        <a href="./services.html" class="w-full sm:w-auto text-center border border-blue-700 text-blue-700 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base hover:bg-blue-50 transition">
-          Explore Services
-        </a>
-      </div>
+      <!-- Button -->
+      <a href="./contact.html" 
+         class="inline-block bg-[#1e3a8a] hover:bg-[#2c4a68] text-white text-sm sm:text-base font-semibold px-6 sm:px-10 py-3 sm:py-4 rounded-full shadow-lg transition-all transform hover:-translate-y-1 tracking-wider uppercase border border-white/20 backdrop-blur-sm">
+        GET-INTOUCH
+      </a>
     </div>
-
-    <!-- Right Image -->
-    <div class="relative mt-8 lg:mt-0">
-      <img src="./assets/hero3.avif"
-           alt="Business Growth"
-           class="w-full max-w-md mx-auto lg:max-w-none rounded-3xl shadow-xl object-cover">
-    </div>
-
   </div>
 </section>
-<!-- ================= TRUST STRIP ================= -->
-<section class="bg-white border-t border-black/10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 md:py-14">
+<!-- ================= TRUST STRIP (Redesigned) ================= -->
+<section class="bg-[#FAF9F6] border-t border-gray-100 py-10 sm:py-14 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8
-                text-black animate-fade-in-up">
-
-      <!-- Item 1 -->
-      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 group text-center sm:text-left">
-        <span
-          class="w-9 h-9 sm:w-11 sm:h-11 rounded-full
-                 border border-blue-600
-                 text-blue-600
-                 flex items-center justify-center
-                 font-bold text-base sm:text-lg
-                 group-hover:bg-blue-600
-                 group-hover:text-white
-                 transition shrink-0">
-          ✓
-        </span>
-        <p class="font-medium leading-snug text-xs sm:text-sm md:text-base">
-          Experienced <br class="hidden md:block" />
-          Chartered Accountants
+      <!-- Item 1: Audit & Assurance -->
+      <a href="./services.html" class="group block text-center sm:text-left transition-transform hover:-translate-y-1">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto sm:mx-0 bg-blue-900 text-white rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4 sm:mb-5 shadow-lg group-hover:bg-blue-800 transition">
+          <i class="fa-solid fa-file-contract"></i>
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-blue-700 transition">Audit & Assurance</h3>
+        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+          Comprehensive statutory audits ensuring compliance, transparency, and financial accuracy for your business.
         </p>
-      </div>
+      </a>
 
-      <!-- Item 2 -->
-      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 group text-center sm:text-left">
-        <span
-          class="w-9 h-9 sm:w-11 sm:h-11 rounded-full
-                 border border-blue-600
-                 text-blue-600
-                 flex items-center justify-center
-                 font-bold text-base sm:text-lg
-                 group-hover:bg-blue-600
-                 group-hover:text-white
-                 transition shrink-0">
-          ₹
-        </span>
-        <p class="font-medium leading-snug text-xs sm:text-sm md:text-base">
-          Transparent <br class="hidden md:block" />
-          Pricing Structure
+      <!-- Item 2: Taxation Services -->
+      <a href="./incometax.html" class="group block text-center sm:text-left transition-transform hover:-translate-y-1">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto sm:mx-0 bg-blue-900 text-white rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4 sm:mb-5 shadow-lg group-hover:bg-blue-800 transition">
+          <i class="fa-solid fa-calculator"></i>
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-blue-700 transition">Taxation Services</h3>
+        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+          Expert tax planning, filing, and advisory services to optimize liabilities and ensure regulatory compliance.
         </p>
-      </div>
+      </a>
 
-      <!-- Item 3 -->
-      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 group text-center sm:text-left">
-        <span
-          class="w-9 h-9 sm:w-11 sm:h-11 rounded-full
-                 border border-blue-600
-                 text-blue-600
-                 flex items-center justify-center
-                 font-bold text-base sm:text-lg
-                 group-hover:bg-blue-600
-                 group-hover:text-white
-                 transition shrink-0">
-          ☎
-        </span>
-        <p class="font-medium leading-snug text-xs sm:text-sm md:text-base">
-          Dedicated <br class="hidden md:block" />
-          Client Support
+      <!-- Item 3: GST Services -->
+      <a href="./gstregistration.html" class="group block text-center sm:text-left transition-transform hover:-translate-y-1">
+        <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto sm:mx-0 bg-blue-900 text-white rounded-xl flex items-center justify-center text-xl sm:text-2xl mb-4 sm:mb-5 shadow-lg group-hover:bg-blue-800 transition">
+          <i class="fa-solid fa-clipboard-check"></i>
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-blue-700 transition">GST Services</h3>
+        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+          End-to-end GST solutions including registration, monthly returns, reconciliation, and audit support.
         </p>
-      </div>
+      </a>
 
-      <!-- Item 4 -->
-      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 group text-center sm:text-left">
-        <span
-          class="w-9 h-9 sm:w-11 sm:h-11 rounded-full
-                 border border-blue-600
-                 text-blue-600
-                 flex items-center justify-center
-                 font-bold text-base sm:text-lg
-                 group-hover:bg-blue-600
-                 group-hover:text-white
-                 transition shrink-0">
-          ⏱
-        </span>
-        <p class="font-medium leading-snug text-xs sm:text-sm md:text-base">
-          Timely Compliance <br class="hidden md:block" />
-          & Reporting
-        </p>
+      <!-- Item 4: Contact Info -->
+      <div class="text-center sm:text-left border-t sm:border-t-0 sm:border-l border-gray-200 pt-6 sm:pt-0 sm:pl-6 lg:pl-10 mt-2 sm:mt-0">
+        <h3 class="text-lg sm:text-xl font-serif font-bold text-gray-900 mb-4 sm:mb-5 uppercase tracking-wide">Contact</h3>
+        
+        <div class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-gray-700">
+          <a href="mailto:camugilan.in@gmail.com" class="flex items-center justify-center sm:justify-start gap-2 sm:gap-3 hover:text-blue-700 transition">
+            <i class="fa-regular fa-envelope text-blue-700 text-base sm:text-lg"></i>
+            <span class="break-all">camugilan.in@gmail.com</span>
+          </a>
+          
+          <div class="flex items-start justify-center sm:justify-start gap-2 sm:gap-3">
+            <i class="fa-solid fa-location-dot text-blue-700 text-base sm:text-lg mt-0.5"></i>
+             <span class="text-left">Kumudepalli, Hosur</span>
+          </div>
+          
+          <a href="tel:+918870336446" class="flex items-center justify-center sm:justify-start gap-2 sm:gap-3 hover:text-blue-700 transition font-medium">
+            <i class="fa-solid fa-phone text-blue-700 text-base sm:text-lg"></i>
+            +91 88703 36446
+          </a>
+        </div>
       </div>
 
     </div>
@@ -128,11 +93,10 @@
 
 
 
-<!-- ================= SERVICES ================= -->
+<!-- SERVICES SECTION - COMMENTED OUT
 <section class="bg-white py-14 sm:py-24">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-    <!-- Section Header -->
     <div class="text-center mb-12 sm:mb-20">
       <p class="text-blue-600 font-semibold tracking-widest uppercase mb-3">
         Our Services
@@ -146,10 +110,8 @@
       </p>
     </div>
 
-    <!-- Cards Grid -->
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
 
-      <!-- CARD 1 -->
       <div
         class="bg-white rounded-3xl border border-black/10
                shadow-sm hover:shadow-2xl
@@ -184,7 +146,6 @@
         </div>
       </div>
 
-      <!-- CARD 2 -->
       <div
         class="bg-white rounded-3xl border border-black/10
                shadow-sm hover:shadow-2xl
@@ -219,7 +180,6 @@
         </div>
       </div>
 
-      <!-- CARD 3 -->
       <div
         class="bg-white rounded-3xl border border-black/10
                shadow-sm hover:shadow-2xl
@@ -256,7 +216,6 @@
 
     </div>
 
-    <!-- CTA -->
     <div class="text-center mt-16 sm:mt-24">
       <a href="./services.html"
          class="inline-flex items-center gap-3
@@ -270,6 +229,7 @@
 
   </div>
 </section>
+-->
 
 
 
@@ -413,7 +373,7 @@
     </div>
 
     <!-- Horizontal Scroll -->
-    <div class="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-4 sm:pb-6 scrollbar-thin scrollbar-thumb-blue-600/40 scrollbar-track-transparent -mx-4 px-4 sm:mx-0 sm:px-0">
+    <div id="scrollContainer" class="scroll-container flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-4 sm:pb-6 scrollbar-thin scrollbar-thumb-blue-600/40 scrollbar-track-transparent -mx-4 px-4 sm:mx-0 sm:px-0">
 
       <!-- Card 1: Retail & E-commerce -->
       <div class="snap-center shrink-0 w-64 sm:w-72 md:w-80 bg-white rounded-xl sm:rounded-2xl border border-black/10 shadow hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
@@ -481,6 +441,24 @@
         </div>
       </div>
 
+      <!-- Card 7: Trading -->
+      <div class="snap-center shrink-0 w-64 sm:w-72 md:w-80 bg-white rounded-xl sm:rounded-2xl border border-black/10 shadow hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/imex.avif" class="h-32 sm:h-40 md:h-44 w-full object-cover rounded-t-xl sm:rounded-t-2xl" />
+        <div class="p-4 sm:p-5 md:p-6">
+          <h3 class="font-semibold text-black text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Trading</h3>
+          <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+            Inventory management, import/export compliance & tax planning for trading businesses.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="flex justify-center gap-2 mt-6">
+      <button class="industry-dot w-2 h-2 rounded-full bg-blue-600 transition-all duration-300" data-index="0"></button>
+      <button class="industry-dot w-2 h-2 rounded-full bg-gray-300 transition-all duration-300" data-index="1"></button>
+      <button class="industry-dot w-2 h-2 rounded-full bg-gray-300 transition-all duration-300" data-index="2"></button>
     </div>
   </div>
 </section>
@@ -516,6 +494,21 @@
 
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Industries Carousel Scroll */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.4);
+  border-radius: 3px;
+}
+.scroll-container {
+  scroll-behavior: smooth;
 }
 </style>
 
@@ -572,104 +565,88 @@
 
 
 
+
+// Industries Carousel with Auto-scroll and Dot Navigation
 (function () {
-      const track = document.getElementById("sectorTrack");
-      const prev = document.getElementById("sectorPrev");
-      const next = document.getElementById("sectorNext");
+  function initIndustriesCarousel() {
+    const container = document.getElementById('scrollContainer');
+    const dots = document.querySelectorAll('.industry-dot');
+    
+    if (!container || dots.length === 0) {
+      // Retry if elements not found yet (for dynamic loading)
+      setTimeout(initIndustriesCarousel, 100);
+      return;
+    }
+    
+    const cards = container.children;
+    const totalCards = cards.length;
+    const cardsPerGroup = 3;
+    const totalGroups = Math.ceil(totalCards / cardsPerGroup);
+    
+    let currentGroup = 0;
+    let autoScrollInterval;
 
-      if (!track || !prev || !next) return;
-
-      const cards = Array.from(track.children);
-      if (cards.length === 0) return;
-
-      // Clone items for infinite loop
-      cards.forEach(card => {
-        track.appendChild(card.cloneNode(true));
-      });
-
-      const originalCount = cards.length;
-      let index = 0;
-      let isTransitioning = false;
-      let autoScroll;
-
-      function getCardWidth() {
-        const card = track.children[0];
-        const style = window.getComputedStyle(track);
-        const gap = parseFloat(style.gap) || 24;
-        return card.offsetWidth + gap;
+    function scrollToGroup(groupIndex) {
+      if (groupIndex >= totalGroups) {
+        groupIndex = 0;
       }
-
-      function updateTransform(smooth = true) {
-        const width = getCardWidth();
-        track.style.transition = smooth ? "transform 0.5s ease-in-out" : "none";
-        track.style.transform = `translateX(-${index * width}px)`;
+      
+      const cardIndex = groupIndex * cardsPerGroup;
+      if (cardIndex < totalCards) {
+        cards[cardIndex].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
       }
+      
+      currentGroup = groupIndex;
+      updateDots();
+    }
 
-      function nextSlide() {
-        if (isTransitioning) return;
-        isTransitioning = true;
-        index++;
-        updateTransform(true);
-      }
-
-      function prevSlide() {
-        if (isTransitioning) return;
-        isTransitioning = true;
-
-        if (index === 0) {
-          index = originalCount;
-          updateTransform(false);
-          // Force reflow
-          void track.offsetWidth;
-          
-          requestAnimationFrame(() => {
-            index--;
-            updateTransform(true);
-          });
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        if (index === currentGroup) {
+          dot.classList.remove('bg-gray-300');
+          dot.classList.add('bg-blue-600');
         } else {
-          index--;
-          updateTransform(true);
-        }
-      }
-
-      track.addEventListener("transitionend", () => {
-        isTransitioning = false;
-        if (index >= originalCount) {
-          index = 0;
-          updateTransform(false);
+          dot.classList.remove('bg-blue-600');
+          dot.classList.add('bg-gray-300');
         }
       });
+    }
 
-      function startAuto() {
-        stopAuto();
-        autoScroll = setInterval(nextSlide, 3000);
-      }
+    function startAutoScroll() {
+      stopAutoScroll();
+      autoScrollInterval = setInterval(() => {
+        currentGroup = (currentGroup + 1) % totalGroups;
+        scrollToGroup(currentGroup);
+      }, 4000);
+    }
 
-      function stopAuto() {
-        clearInterval(autoScroll);
-      }
+    function stopAutoScroll() {
+      clearInterval(autoScrollInterval);
+    }
 
-      next.onclick = () => {
-        stopAuto();
-        nextSlide();
-        startAuto();
-      };
-
-      prev.onclick = () => {
-        stopAuto();
-        prevSlide();
-        startAuto();
-      };
-
-      track.addEventListener("mouseenter", stopAuto);
-      track.addEventListener("mouseleave", startAuto);
-
-      window.addEventListener("resize", () => {
-        updateTransform(false);
+    // Dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        stopAutoScroll();
+        scrollToGroup(index);
+        startAutoScroll();
       });
+    });
 
-      startAuto();
-    })();
+    // Pause on hover
+    container.addEventListener('mouseenter', stopAutoScroll);
+    container.addEventListener('mouseleave', startAutoScroll);
+
+    // Start auto-scroll
+    startAutoScroll();
+  }
+  
+  // Initialize after a short delay to ensure DOM is ready (for dynamic loading)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initIndustriesCarousel);
+  } else {
+    // DOM is already ready, but content might be injected dynamically
+    setTimeout(initIndustriesCarousel, 50);
+  }
+})();
 </script>
-
-

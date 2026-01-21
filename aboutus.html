@@ -23,88 +23,77 @@
   <div id="navbar"></div>
 
   <!-- ================= ABOUT HERO ================= -->
-  <section class="relative bg-blue-900 text-white overflow-hidden pt-36 pb-20">
+  <section class="relative bg-gray-900 text-white overflow-hidden pt-28 sm:pt-32 md:pt-36 pb-16 sm:pb-20">
     <div class="absolute inset-0">
       <img 
         src="./assets/about.avif" 
         alt="Office Background" 
-        class="w-full h-full object-cover opacity-30"
+        class="w-full h-full object-cover"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-900/60 to-blue-900"></div>
-      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400 opacity-10 blur-[120px] rounded-full"></div>
+      <!-- Subtle dark overlay for text readability -->
+      <div class="absolute inset-0 bg-black/50"></div>
     </div>
 
-    <div class="relative max-w-7xl mx-auto px-6 text-center">
-      <span class="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider uppercase bg-blue-500/20 border border-blue-400/30 rounded-full">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <span class="inline-block px-3 sm:px-4 py-1 sm:py-1.5 mb-4 sm:mb-6 text-xs sm:text-sm font-medium tracking-wider uppercase bg-blue-500/20 border border-blue-400/30 rounded-full">
         Our Story
       </span>
-      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+      <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
         About Us
       </h1>
-      <p class="text-blue-50/90 max-w-2xl mx-auto text-lg leading-relaxed">
-        Delivering Technically sound <span class="text-white font-semibold">Chartered Accountant</span> and business Advisory<br/> services with integrity, innovation and excellence.
+      <p class="text-blue-50/90 max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed px-2">
+        Delivering Technically sound <span class="text-white font-semibold">Chartered Accountant</span> and business Advisory services with integrity, innovation and excellence.
       </p>
     </div>
   </section>
   <!-- ================= ABOUT INTRO ================= -->
-  <section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+  <section class="py-12 sm:py-16 md:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
       
-      <div class="relative group">
-        <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-blue-700"></div>
+      <div class="relative group order-2 lg:order-1">
+        <div class="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 border-t-4 border-l-4 border-blue-700"></div>
         
         <div class="overflow-hidden rounded-lg shadow-lg">
           <img 
             src="assets/value.jpg" 
-            alt="CA Manoj Kumar D Office" 
+            alt="Mugilan Poonkundran & Co Office" 
             class="w-full h-auto object-cover block"
           >
         </div>
         
-        <div class="absolute bottom-0 right-0 bg-blue-900 text-white px-8 py-6 rounded-tl-3xl shadow-xl">
-          <div class="text-3xl font-bold">✓</div>
-          <div class="text-xs uppercase tracking-widest opacity-80">Trusted Experts</div>
+        <div class="absolute bottom-0 right-0 bg-blue-900 text-white px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 rounded-tl-2xl sm:rounded-tl-3xl shadow-xl">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold">✓</div>
+          <div class="text-[10px] sm:text-xs uppercase tracking-widest opacity-80">Trusted Experts</div>
         </div>
       </div>
 
-      <div class="space-y-6">
+      <div class="space-y-4 sm:space-y-5 md:space-y-6 order-1 lg:order-2">
         <div class="flex items-center gap-2">
-          <div class="w-8 h-1 bg-blue-600"></div>
-          <span class="text-blue-700 font-bold uppercase tracking-widest text-xs">Excellence Driven</span>
+          <div class="w-6 sm:w-8 h-1 bg-blue-600"></div>
+          <span class="text-blue-700 font-bold uppercase tracking-widest text-[10px] sm:text-xs">About Us</span>
         </div>
 
-        <h2 class="font-serif text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
-          Delivering Technically Sound <br>
-          <span class="text-blue-700 italic">Financial Advisory</span>
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+          Professionally Managed <br class="hidden sm:block">
+          <span class="text-blue-700 italic">Chartered Accountant Firm</span>
         </h2>
 
-        <p class="text-slate-600 text-lg leading-relaxed">
-          Mugilan Poonkundran & Co provides a full spectrum of Chartered Accountant services across India. Founded by <strong>Mugilan Poonkundran</strong>, we bridge the gap between complex legal compliance and business growth.
+        <p class="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed">
+          Mugilan Poonkundran & CO is a professionally managed Chartered Accountant firm registered with Institute of Chartered Accountants of India (ICAI) providing reliable, and value-driven services in the fields of Income Tax, GST, Accounting, Audit, and Corporate Compliance.
         </p>
 
-        <div class="grid sm:grid-cols-2 gap-4 pt-2">
-          <div class="flex items-center gap-3 border-l-2 border-blue-100 pl-4">
-            <span class="text-blue-600 font-bold text-xl">✓</span>
-            <span class="text-slate-700 font-medium">Tax Audit Expert</span>
-          </div>
-          <div class="flex items-center gap-3 border-l-2 border-blue-100 pl-4">
-            <span class="text-blue-600 font-bold text-xl">✓</span>
-            <span class="text-slate-700 font-medium">GST Services</span>
-          </div>
-          <div class="flex items-center gap-3 border-l-2 border-blue-100 pl-4">
-            <span class="text-blue-600 font-bold text-xl">✓</span>
-            <span class="text-slate-700 font-medium">Statutory Audits</span>
-          </div>
-          <div class="flex items-center gap-3 border-l-2 border-blue-100 pl-4">
-            <span class="text-blue-600 font-bold text-xl">✓</span>
-            <span class="text-slate-700 font-medium">ITR Filing</span>
-          </div>
-        </div>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          Our objective is to help clients remain compliant with laws while optimizing their tax and financial positions. With a strong foundation in Indian taxation and regulatory frameworks, we serve individuals, proprietors, partnership firms, companies, and professionals across various sectors.
+        </p>
 
-        <div class="pt-6">
-          <a href="/contact.html" class="inline-block bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 rounded text-sm font-bold uppercase tracking-wider transition-colors shadow-md">
-            Contact Us
+        <p class="text-slate-500 text-xs sm:text-sm italic">
+          We believe in offering practical solutions, timely support, and clear communication.
+        </p>
+
+        <div class="pt-2 sm:pt-4">
+          <a href="./contact.html" class="inline-block bg-blue-800 hover:bg-blue-900 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded text-xs sm:text-sm font-bold uppercase tracking-wider transition-colors shadow-md">
+            Get In Touch
           </a>
         </div>
       </div>
@@ -113,85 +102,99 @@
   </div>
 </section>
 
-  <!-- ================= SERVICES LIST ================= -->
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-6">
+  <!-- ================= OUR APPROACH ================= -->
+  <section class="py-12 sm:py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-      <div class="text-center mb-16">
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4">Our Services</h2>
-        <div class="w-16 h-1 bg-[#1d4ed8] mx-auto"></div>
+      <div class="text-center mb-10 sm:mb-12 md:mb-16">
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3 sm:mb-4">Our Approach</h2>
+        <div class="w-12 sm:w-16 h-1 bg-blue-600 mx-auto"></div>
+        <p class="text-slate-600 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base px-2">
+          We keep ourselves updated with the latest amendments in tax laws, GST notifications, and corporate regulations, ensuring that our clients receive correct and up-to-date advice.
+        </p>
       </div>
 
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Service Items -->
-        <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-          <h3 class="font-bold text-[#0f172a] mb-2 group-hover:text-[#1d4ed8] transition-colors">Tax Audit</h3>
-          <p class="text-sm text-slate-500">Create clarity in complexity.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Approach 1 -->
+        <div class="bg-white p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group text-center">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 group-hover:bg-blue-700 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-users text-lg sm:text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base group-hover:text-blue-700 transition-colors">Client-Centric</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Solution-oriented approach focused on your needs</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-          <h3 class="font-bold text-[#0f172a] mb-2 group-hover:text-[#1d4ed8] transition-colors">Accounts Outsourcing</h3>
-          <p class="text-sm text-slate-500">Efficient financial management.</p>
+
+        <!-- Approach 2 -->
+        <div class="bg-white p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group text-center">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 group-hover:bg-blue-700 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-bullseye text-lg sm:text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base group-hover:text-blue-700 transition-colors">Compliance Focus</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Strong focus on accuracy and meeting deadlines</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-          <h3 class="font-bold text-[#0f172a] mb-2 group-hover:text-[#1d4ed8] transition-colors">Statutory Compliance</h3>
-          <p class="text-sm text-slate-500">Risk-free operations.</p>
+
+        <!-- Approach 3 -->
+        <div class="bg-white p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group text-center">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 group-hover:bg-blue-700 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-lightbulb text-lg sm:text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base group-hover:text-blue-700 transition-colors">Simple Explanations</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Clear communication for complex tax and legal matters</p>
         </div>
-         <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-          <h3 class="font-bold text-[#0f172a] mb-2 group-hover:text-[#1d4ed8] transition-colors">Scrutiny Assessments</h3>
-          <p class="text-sm text-slate-500">Expert representation.</p>
+
+        <!-- Approach 4 -->
+        <div class="bg-white p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group text-center">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 group-hover:bg-blue-700 group-hover:text-white transition-colors">
+            <i class="fa-solid fa-scale-balanced text-lg sm:text-xl"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2 text-sm sm:text-base group-hover:text-blue-700 transition-colors">Ethical Practices</h3>
+          <p class="text-xs sm:text-sm text-slate-500">Professional integrity in everything we do</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-          <h3 class="font-bold text-[#0f172a] mb-2 group-hover:text-[#1d4ed8] transition-colors">Company Incorporations</h3>
-          <p class="text-sm text-slate-500">Start your journey right.</p>
-        </div>
-         <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-          <h3 class="font-bold text-[#0f172a] mb-2 group-hover:text-[#1d4ed8] transition-colors">FEMA Compliance</h3>
-          <p class="text-sm text-slate-500">Global business simplified.</p>
-        </div>
+
       </div>
 
     </div>
   </section>
 
   <!-- ================= MISSION & VALUES ================= -->
-  <section class="bg-[#0f172a] py-20 text-white overflow-hidden relative">
+  <section class="bg-[#0f172a] py-12 sm:py-16 md:py-20 text-white overflow-hidden relative">
     <!-- Decor -->
     <div class="absolute top-0 left-0 w-full h-full bg-[url('assets/pattern-grid.png')] opacity-5"></div>
     
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center relative z-10">
 
-      <div>
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6">
+      <div class="text-center md:text-left">
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
           Our Mission
         </h2>
-        <p class="text-slate-300 text-lg leading-relaxed mb-8">
-          We are committed to providing consistent, innovative, efficient and
-          qualitative Chartered Accountant Services ensuring value creation and long-term growth.
+        <p class="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed mb-4">
+          To deliver exceptional financial and compliance services that empower businesses to thrive. We are dedicated to simplifying complex tax and regulatory matters, enabling our clients to focus on what they do best — growing their business.
         </p>
-        <button class="text-[#1d4ed8] font-semibold border-b border-[#1d4ed8] pb-1 hover:text-white hover:border-white transition-all">
-          Read Our Vision
-        </button>
+        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+          We strive to be trusted partners in our clients' success, offering timely, accurate, and personalized solutions that create lasting value and foster long-term relationships built on integrity and transparency.
+        </p>
       </div>
 
-      <div class="bg-white/5 border border-white/10 p-10 rounded-3xl backdrop-blur-sm">
-        <h3 class="font-serif font-semibold text-2xl mb-6 text-[#1d4ed8]">
+      <div class="bg-white/5 border border-white/10 p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl backdrop-blur-sm">
+        <h3 class="font-serif font-semibold text-xl sm:text-2xl mb-4 sm:mb-6 text-[#1d4ed8]">
           Why Clients Trust Us
         </h3>
-        <ul class="space-y-4 text-slate-300">
+        <ul class="space-y-3 sm:space-y-4 text-slate-300 text-sm sm:text-base">
           <li class="flex items-center gap-3">
-            <span class="w-6 h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-xs font-bold">✓</span>
+            <span class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-[10px] sm:text-xs font-bold shrink-0">✓</span>
             Client-Centric Approach
           </li>
           <li class="flex items-center gap-3">
-             <span class="w-6 h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-xs font-bold">✓</span>
+             <span class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-[10px] sm:text-xs font-bold shrink-0">✓</span>
             Strong Ethical Standards
           </li>
           <li class="flex items-center gap-3">
-             <span class="w-6 h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-xs font-bold">✓</span>
+             <span class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-[10px] sm:text-xs font-bold shrink-0">✓</span>
             Technically Sound Advisory
           </li>
           <li class="flex items-center gap-3">
-             <span class="w-6 h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-xs font-bold">✓</span>
+             <span class="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#1d4ed8] flex items-center justify-center text-[#0f172a] text-[10px] sm:text-xs font-bold shrink-0">✓</span>
             Timely & Reliable Delivery
           </li>
         </ul>

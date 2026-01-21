@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GST Registration in Bangalore | MKDA</title>
+  <title>GST Services | Mugilan Poonkundran & Co</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -19,28 +19,25 @@
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      position: relative;
-      display: inline-block;
     }
 
-    .gradient-title::after {
+    .service-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
       content: '';
       position: absolute;
-      bottom: -0.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 40px;
-      height: 3px;
-      background: linear-gradient(to right, #1d4ed8, #2563eb);
-      border-radius: 2px;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, #1d4ed8, #3b82f6);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
     }
-
-    @media (max-width: 640px) {
-      .gradient-title::after {
-        bottom: -0.25rem;
-        height: 2px;
-        width: 30px;
-      }
+    .service-card:hover::before {
+      transform: scaleX(1);
     }
   </style>
 
@@ -52,8 +49,6 @@
             blue: {
               50: '#eff6ff',
               100: '#dbeafe',
-              200: '#a7f3d0',
-              300: '#6ee7b7',
               400: '#60a5fa',
               500: '#2563eb',
               600: '#2563eb',
@@ -75,257 +70,287 @@
   <div id="navbar"></div>
 
   <!-- HERO -->
- <section class="relative min-h-[520px] pt-32 flex items-center overflow-hidden">
+  <section class="relative min-h-[480px] pt-28 flex items-center overflow-hidden">
     <div class="absolute inset-0">
-      <img src="assets/hero1.jpg" alt="Shop and Establishment Registration" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-800/85 to-blue-700/70"></div>
+      <img src="assets/hero1.jpg" alt="GST Services" class="w-full h-full object-cover" />
+      <!-- Subtle dark overlay for text readability -->
+      <div class="absolute inset-0 bg-black/50"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 text-white">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 text-white">
       <nav class="text-sm text-white/70 mb-6 flex gap-2">
         <a href="index.html" class="hover:text-blue-300">Home</a> /
-        <a href="services.html" class="hover:text-blue-300">Services</a> /
-        <span class="text-blue-300">GST Registration</span>
+        
+        <span class="text-blue-300">GST Services</span>
       </nav>
 
-     <h1 class="text-4xl md:text-5xl font-bold mb-6">
-        Gst Registration in Bangalore
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+        GST Services
       </h1>
 
-      <p class="text-lg text-white/80 max-w-2xl">
-       Simplified indirect tax structure for businesses. Get expert assistance for GST registration, compliance, and filing in 3-6 working days.
+      <p class="text-base sm:text-lg text-white/85 max-w-2xl">
+        Complete GST Registration, Return Filing, Compliance, and Advisory services by experienced Chartered Accountants.
       </p>
     </div>
   </section>
+
   <!-- Sticky Navigation -->
-  <nav class="sticky top-[96px] sm:top-[116px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
+  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
-        <button data-section="overview" class="px-3 sm:px-5 py-3 text-xs sm:text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Overview</button>
-        <button data-section="documents" class="px-3 sm:px-5 py-3 text-xs sm:text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Documents</button>
-        <button data-section="timeline" class="px-3 sm:px-5 py-3 text-xs sm:text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Timeline</button>
-        <button data-section="advantages" class="px-3 sm:px-5 py-3 text-xs sm:text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Advantages</button>
-        <button data-section="advisory" class="px-3 sm:px-5 py-3 text-xs sm:text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Advisory</button>
+        <button data-section="gst-services" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">GST Services</button>
+        <button data-section="specialized" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Specialized</button>
+        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
       </div>
     </div>
   </nav>
 
   <!-- MAIN CONTENT -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-16 space-y-12 sm:space-y-20">
+  <main class="max-w-7xl mx-auto px-4 py-12 sm:py-16 space-y-16 sm:space-y-20">
 
-    <!-- Overview -->
-    <section id="overview" class="max-w-4xl mx-auto">
-      <h2 class="gradient-title text-2xl sm:text-3xl font-bold mb-8">GST Registration</h2>
+    <!-- GST Services Section -->
+    <section id="gst-services">
+      <div class="text-center mb-10 sm:mb-14">
+       
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">GST Services</h2>
+        <p class="text-gray-600 max-w-2.5xl mx-auto text-sm sm:text-base">Comprehensive GST registration, filing, compliance, and advisory for businesses of all sizes.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
 
-      <div class="text-gray-600 leading-relaxed space-y-4 text-sm sm:text-base">
-        <p>
-          Goods and Service Tax is a tax levied on the user's supply of goods and services. GST is a simplified indirect tax structure. The tax paid on goods and services procured by one person can be availed as credit while passing on the goods and services to the next stage until they reach the final consumer who bears tax incidence.
-        </p>
-        <p>
-          In the GST Regime businesses, if a turnover from the sale of goods exceeds Rs. Forty lakhs (Rs 20 lakhs for North Eastern and hilly states) or turnover from sale of services exceeds Rs 20 lakhs; it is required to register as an average taxable person. For other businesses, registration under GST is mandatory irrespective of turnover, like those paying tax under the reverse charge mechanism, supply to SEZ, Exports, etc.
-        </p>
-        <p>
-          We at <b><a href="https://camanojkumar.com/" class="text-blue-600 hover:underline">MKDA</a></b>. assist you in getting GST Registration in Bangalore in 3-6 working days.
-        </p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+
+        <!-- Card 1: GST Registration -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-id-card text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">GST Registration</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Complete support for obtaining GST registration—new businesses, existing entities, or amendments. We guide you through <span class="text-slate-700 font-medium">documentation</span>, <span class="text-slate-700 font-medium">eligibility checks</span>, and application filing.
+          </p>
+        </div>
+
+        <!-- Card 2: GST Return Filing -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-file-lines text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">GST Return Filing</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-3">
+            Timely and accurate filing of all GST returns:
+          </p>
+          <ul class="text-slate-600 text-sm space-y-1.5">
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-1</strong> – Outward supplies</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-3B</strong> – Monthly summary</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-9</strong> – Annual return</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-9C</strong> – CA certified</span></li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Composition Scheme -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-percent text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Composition Scheme</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Complete support for businesses opting for the Composition Scheme—eligibility evaluation, CMP-02 application, quarterly CMP-08 payments, and annual GSTR-4 filing with proper documentation.
+          </p>
+        </div>
+
+        <!-- Card 4: ITC Reconciliation -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-arrows-rotate text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">ITC Reconciliation</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Matching purchase data with GSTR-2A/2B to maximize eligible credits. We maintain accurate records and prevent mismatches that could lead to notices.
+          </p>
+        </div>
+
+        <!-- Card 5: Annual Compliance -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-calendar-check text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">GST Annual Compliance</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Preparation and filing of GSTR-9 and GSTR-9C, reconciliation of accounts, and certification to ensure complete compliance with GST law.
+          </p>
+        </div>
+
+        <!-- Card 6: LUT -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-file-signature text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Letter of Undertaking (LUT)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Filing of LUT (Form GST RFD-11) for exporters and SEZ units, enabling supply without IGST payment. We ensure timely filing and renewal for tax-free exports.
+          </p>
+        </div>
+
+        <!-- Card 7: E-Way Bill & E-Invoicing -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-truck-fast text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">E-Way Bill & E-Invoicing</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Assistance with generation and management of E-Way Bills for goods movement and compliance with E-Invoicing requirements for eligible businesses.
+          </p>
+        </div>
+
+        <!-- Card 8: Notice & Litigation -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gavel text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Notice & Litigation</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            End-to-end support for GST notices, assessments, and legal disputes—reviewing notices, drafting replies, and representing before GST authorities and appellate tribunals.
+          </p>
+        </div>
+
       </div>
     </section>
 
-    <!-- Documents -->
-    <section id="documents" class="max-w-4xl mx-auto">
-      <h2 class="gradient-title text-2xl sm:text-3xl font-bold mb-8">Documents needed for GST Registration in Bangalore</h2>
+    <!-- Specialized Services Section -->
+    <section id="specialized" class="bg-gradient-to-br from-slate-50 to-blue-50 -mx-4 px-4 sm:px-8 py-12 sm:py-16 rounded-3xl">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="inline-block px-4 py-1.5 bg-blue-900 text-white text-xs font-semibold uppercase tracking-wider rounded-full mb-4">Additional</span>
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Specialized Services</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
 
-      <div class="space-y-8 text-gray-600 leading-relaxed text-sm sm:text-base">
-        <div>
-          <h3 class="gradient-title text-xl font-semibold mb-4"><a href="http://camanojkumar.com/proprietorship-registration-bangalore.php" class="text-blue-600 hover:underline">Proprietorship</a>:</h3>
-          <ul class="list-disc pl-8 space-y-2">
-            <li>Copy of PAN Card</li>
-            <li>Copy of Aadhar Card</li>
-            <li>1 Passport size Photo</li>
-            <li>Rental Agreement of business address.</li>
-            <li>Copy of Latest Electricity Bill or Property Tax paid receipt of Office address.</li>
-            <li>Current Bank Account Statement / Cancelled Cheque</li>
-            <li>Certificates or proof of any other registrations of the business – if any</li>
-          </ul>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-5xl mx-auto">
+
+        <!-- Specialized Card 1 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Refund Applications</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Filing refund claims for excess tax paid, export of goods/services, or inverted duty structure with complete documentation.
+          </p>
         </div>
 
-        <div>
-          <h3 class="gradient-title text-xl font-semibold mb-4"><a href="http://camanojkumar.com/partnership-registration-bangalore.php" class="text-blue-600 hover:underline">Partnership Firm</a>:</h3>
-          <ul class="list-disc pl-8 space-y-2">
-            <li>PAN Card of <a href="http://camanojkumar.com/partnership-registration-bangalore.php" class="text-blue-600 hover:underline">Partnership Firm</a></li>
-            <li>PAN Card of Partners</li>
-            <li>Aadhar Card of all Partners</li>
-            <li>Colour Photo of all Partners</li>
-            <li>Rental Agreement of business address in the name of company.</li>
-            <li>Copy of Latest Electricity Bill or Property Tax paid receipt of business address.</li>
-            <li>Current Bank Account Statement / Cancelled Cheque</li>
-            <li>Contact Number and Email id of all Directors.</li>
-          </ul>
+        <!-- Specialized Card 2 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-500 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">GST Advisory</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Expert guidance on complex transactions, place of supply rules, and sector-specific GST issues to optimize your tax position.
+          </p>
         </div>
 
-        <div>
-          <h3 class="gradient-title text-xl font-semibold mb-4"><a href="http://camanojkumar.com/limited-liability-partnership-registration-bangalore.php" class="text-blue-600 hover:underline">LLP</a>:</h3>
-          <ul class="list-disc pl-8 space-y-2">
-            <li>PAN Card of <a href="http://camanojkumar.com/limited-liability-partnership-registration-bangalore.php" class="text-blue-600 hover:underline">LLP</a></li>
-            <li>PAN Card of all Partners</li>
-            <li>Aadhar Card of all Partners</li>
-            <li>Passport size Photo of all Partners</li>
-            <li>Rental Agreement of business address in the name of company.</li>
-            <li>Copy of Latest Electricity Bill or Property Tax paid receipt of business address.</li>
-            <li>Current Bank Account Statement / Cancelled Cheque</li>
-            <li>Certificate of Incorporation</li>
-            <li><a href="http://camanojkumar.com/limited-liability-partnership-registration-bangalore.php" class="text-blue-600 hover:underline">LLP</a> Agreement.</li>
-            <li>Digital Signature of any one Authorized Director</li>
-            <li>Board Resolution or Authorization letter to become authorized signatory in GST (we will draft this and share it for your signatures).</li>
-            <li>Contact Number and Email id of all Directors.</li>
-          </ul>
+        <!-- Specialized Card 3 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-400 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Compliance Reviews</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Periodic checks to ensure your GST processes are aligned with law and identify any gaps before they become issues.
+          </p>
         </div>
 
-        <div>
-          <h3 class="gradient-title text-xl font-semibold mb-4">Private Limited Company:</h3>
-          <ul class="list-disc pl-8 space-y-2">
-            <li>PAN Card of Company</li>
-            <li>PAN Card of all Directors</li>
-            <li>Aadhar Card of all Directors</li>
-            <li>Passport size Photo of all Directors</li>
-            <li>Rental Agreement of business address in the name of company.</li>
-            <li>Copy of Latest Electricity Bill or Property Tax paid receipt of business address.</li>
-            <li>Current Bank Account Statement / Cancelled Cheque</li>
-            <li>Certificate of Incorporation</li>
-            <li>MOA, AOA.</li>
-            <li>Digital Signature of any one Authorized Director</li>
-            <li>Board Resolution or Authorization letter to become authorized signatory in GST (we will draft this and share it for your signatures).</li>
-            <li>Contact Number and Email id of all Directors.</li>
-          </ul>
-        </div>
       </div>
     </section>
 
-    <!-- Timeline -->
-    <section id="timeline" class="max-w-4xl mx-auto">
-      <h2 class="gradient-title text-2xl sm:text-3xl font-bold mb-8">Timeline for GST Registration in Bangalore</h2>
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-12 sm:py-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10 sm:mb-12">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <div class="h-1 w-20 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full mx-auto"></div>
+        </div>
 
-      <div class="text-gray-600 leading-relaxed space-y-4 text-sm sm:text-base">
-        <p>
-          After receipt of all necessary documents, it takes 1 or 2 days to submit the application online. The approval takes around 7 to 15 working days (subject to change depending on cases and departmental processing time)
-        </p>
+        <div class="space-y-4">
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group" open>
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              Who needs to register for GST?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Businesses with turnover exceeding Rs. 40 lakhs (goods) or Rs. 20 lakhs (services) must register. Also, those paying tax under reverse charge, interstate suppliers, e-commerce operators, and businesses making supplies to SEZ require registration irrespective of turnover.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What are the different types of GST returns?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Key returns include GSTR-1 (outward supplies), GSTR-3B (monthly summary), GSTR-9 (annual return), and GSTR-9C (reconciliation statement). Composition dealers file GSTR-4 annually and CMP-08 quarterly.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What is ITC and how does reconciliation work?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Input Tax Credit (ITC) is the GST paid on purchases that can be offset against output tax. Reconciliation involves matching your purchase records with GSTR-2A/2B data to ensure you claim only eligible credits and avoid mismatches that trigger notices.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What is the Composition Scheme?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              The Composition Scheme offers simplified compliance and reduced tax rates for small taxpayers with turnover up to Rs. 1.5 crore. However, composition dealers cannot claim ITC, make interstate supplies, or issue tax invoices.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What is LUT and who needs it?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Letter of Undertaking (LUT) allows exporters and SEZ suppliers to make zero-rated supplies without paying IGST. It must be filed in Form GST RFD-11 before the start of each financial year.
+            </div>
+          </details>
+        </div>
       </div>
     </section>
-
-    <!-- Advantages -->
-    <section id="advantages" class="max-w-4xl mx-auto">
-      <h2 class="gradient-title text-2xl sm:text-3xl font-bold mb-8">Advantages</h2>
-
-      <ul class="list-disc pl-8 space-y-2 text-gray-600 text-sm sm:text-base">
-        <li>Removing cascading tax effect</li>
-        <li>Higher threshold for registration</li>
-        <li>Composition scheme for small business</li>
-        <li>Since its online, it is a straightforward procedure</li>
-        <li>Lesser compliances</li>
-        <li>Defined treatment for e-commerce</li>
-        <li>Increased efficiency in logistics</li>
-        <li>Regulating the unorganized sector</li>
-      </ul>
-    </section>
-
-    <!-- Advisory -->
-    <section id="advisory" class="max-w-4xl mx-auto">
-      <h2 class="gradient-title text-2xl sm:text-3xl font-bold mb-8">GST Advisory and Compliance</h2>
-
-      <div class="text-gray-600 leading-relaxed space-y-4 text-sm sm:text-base">
-        <p>
-          We at MKDA have speedy and updated GST compliance services with highly experienced GST consultants in Bangalore.
-        </p>
-        <p>
-          Various services provided by MKDA are as follows:
-        </p>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>Obtaining Registration</li>
-          <li>Preparation and filing of Returns.</li>
-          <li>Advising on GST Matters</li>
-          <li>Updation on changes in the law.</li>
-          <li>Filing for GST refund</li>
-          <li>Representation before Tax Authorities.</li>
-          <li>Appeal at Tribunals and Courts</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- FAQs Section (GST Registration - No Image Version) -->
-<section id="faqs" class="py-20 bg-gray-50">
-  <div class="max-w-4xl mx-auto px-6">
-    <!-- Section Title -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-        Frequently Asked Questions
-      </h2>
-      <div class="h-1 w-24 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full mx-auto"></div>
-    </div>
-
-    <!-- Accordion FAQs -->
-    <div class="space-y-4">
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group" open>
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          How can I get a GST number in Bangalore?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          You can apply online and track your application. Complete Online Document Submission & Application Tracking
-          <ul class="list-disc pl-6 mt-4 space-y-2">
-            <li>Fill the Application for GST Registration</li>
-            <li>Secure your GST Identification Number</li>
-            <li>Dedicated manager will be assigned to process your GST registration.</li>
-            <li>It can be done entirely online – No need to visit the office</li>
-            <li>CA Assisted GST Filing for all your GST needs</li>
-          </ul>
-        </div>
-      </details>
-
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          Who is required to register for GST?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Individuals registered under the Pre-GST law (i.e., Excise, VAT, Service Tax, etc.)</li>
-            <li>Businesses with turnover above the threshold limit of Rs. 20 Lakhs (in case of services)/ Rs. 40 Lakhs (in case of products)</li>
-            <li>Businesses with turnover above the threshold limit of Rs. 10 Lakhs (in case of services)/ Rs. 20 Lakhs (in case of products) (for North-Eastern States, J&K, Himachal Pradesh, and Uttarakhand)</li>
-            <li>Agents of a supplier & Input service distributor</li>
-            <li>Those paying tax under the reverse charge mechanism</li>
-            <li>A person who supplies via an e-commerce aggregator</li>
-            <li>Every e-commerce aggregator</li>
-            <li>Person supplying online information and database access or retrieval services from a place outside India to a person in India, other than a registered taxable person</li>
-          </ul>
-        </div>
-      </details>
-
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          How is GST calculated?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          A business whose turnover exceeds Rs 20 lakh in a financial year is required to register under GST. A composition scheme has been introduced under GST for small companies operating in India.
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
 
     <!-- CTA -->
-    <section class="max-w-4xl mx-auto text-center py-12 bg-blue-50 rounded-2xl px-4">
-      <p class="text-xl sm:text-2xl font-bold text-blue-900 mb-4">
-        Ensure seamless GST compliance!
-      </p>
-      <p class="text-lg sm:text-xl text-blue-800">
-        Contact MKDA for expert GST registration & filing in Bangalore.
-      </p>
+    <section class="max-w-4xl mx-auto text-center py-10 sm:py-12 bg-blue-50 rounded-2xl px-6">
+      <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3">
+        Need Help with GST Compliance?
+      </h3>
+      <p class="text-gray-600 mb-6 text-sm sm:text-base">Our experienced team is ready to assist you with all your GST registration, filing, and advisory needs.</p>
+      <a href="./contact.html" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg">
+        Contact Us Today
+      </a>
     </section>
 
   </main>
@@ -333,35 +358,35 @@
   <!-- Footer -->
   <div id="footer"></div>
 
-<!-- JavaScript -->
-<script src="assets/js/loader.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("[data-section]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.getElementById(btn.dataset.section)?.scrollIntoView({ behavior: "smooth" });
-      });
-    });
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-      document.querySelectorAll("section[id]").forEach(section => {
-        const sectionTop = section.offsetTop - 200;
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
+  <!-- JavaScript -->
+  <script src="assets/js/loader.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
 
       document.querySelectorAll("[data-section]").forEach(btn => {
-        btn.classList.remove("text-blue-700", "bg-blue-50");
-        if (btn.dataset.section === current) {
-          btn.classList.add("text-blue-700", "bg-blue-50");
-        }
+        btn.addEventListener("click", () => {
+          document.getElementById(btn.dataset.section)?.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        document.querySelectorAll("section[id]").forEach(section => {
+          const sectionTop = section.offsetTop - 200;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll("[data-section]").forEach(btn => {
+          btn.classList.remove("text-blue-700", "bg-blue-50");
+          if (btn.dataset.section === current) {
+            btn.classList.add("text-blue-700", "bg-blue-50");
+          }
+        });
       });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
-

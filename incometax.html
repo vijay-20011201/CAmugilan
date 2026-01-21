@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Income Tax Auditing Services in Bangalore | MKDA</title>
+  <title>Income Tax Services | Mugilan Poonkundran & Co</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -20,6 +20,25 @@
       background-clip: text;
       color: transparent;
     }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, #1d4ed8, #3b82f6);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
   </style>
 
   <script>
@@ -30,8 +49,6 @@
             blue: {
               50: '#eff6ff',
               100: '#dbeafe',
-              200: '#a7f3d0',
-              300: '#6ee7b7',
               400: '#60a5fa',
               500: '#2563eb',
               600: '#2563eb',
@@ -53,170 +70,308 @@
   <div id="navbar"></div>
 
   <!-- HERO -->
-  <section class="relative min-h-[520px] pt-32 flex items-center overflow-hidden">
+  <section class="relative min-h-[480px] pt-28 flex items-center overflow-hidden">
     <div class="absolute inset-0">
-      <img src="assets/hero1.jpg" alt="Income Tax Auditing" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-800/85 to-blue-700/70"></div>
+      <img src="assets/tax.jpg" alt="Income Tax Services" class="w-full h-full object-cover" />
+      <!-- Subtle dark overlay for text readability -->
+      <div class="absolute inset-0 bg-black/50"></div>
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 text-white">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 text-white">
       <nav class="text-sm text-white/70 mb-6 flex gap-2">
         <a href="index.html" class="hover:text-blue-300">Home</a> /
-        <a href="services.html" class="hover:text-blue-300">Services</a> /
-        <span class="text-blue-300">Income Tax Auditing</span>
+      
+        <span class="text-blue-300">Income Tax Services</span>
       </nav>
 
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">
-        Income Tax Auditing Services in Bangalore
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+        Income Tax Services
       </h1>
 
-      <p class="text-lg text-white/80 max-w-2xl">
-        Professional tax audit, statutory audit, and compliance services by experienced Chartered Accountants at MKDA.
+      <p class="text-base sm:text-lg text-white/85 max-w-2xl">
+        Comprehensive Income Tax Return filing, TDS compliance, Tax Audit, and Advisory services by experienced Chartered Accountants.
       </p>
     </div>
   </section>
 
   <!-- Sticky Navigation -->
-  <nav class="sticky top-[96px] sm:top-[116px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
+  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
-        <button data-section="overview" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Overview</button>
-        <button data-section="services" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Our Services</button>
+        <button data-section="itr-services" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">ITR Services</button>
+        <button data-section="tds-services" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">TDS Compliance</button>
+        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
       </div>
     </div>
   </nav>
 
   <!-- MAIN CONTENT -->
-  <main class="max-w-7xl mx-auto px-4 py-16 space-y-20">
+  <main class="max-w-7xl mx-auto px-4 py-12 sm:py-16 space-y-16 sm:space-y-20">
 
-    <!-- Hero Visuals -->
-    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-
-
-    </div>
-
-    <!-- Overview -->
-    <section id="overview" class="max-w-4xl mx-auto">
-      <h2 class="gradient-title text-3xl font-bold mb-8">What is Income Tax Auditing?</h2>
-
-      <div class="text-gray-600 leading-relaxed space-y-4">
-        <p>
-          An audit is an official inspection of a company's accounts and the production of a report by an independent body. It is a systematic review or assessment. A tax audit is a review of accounts of a business or profession carried by taxpayers under income tax. It is the process of income computation for filing of return of income easier.
-        </p>
-        <p>
-          Income Tax Act, 1961 requires individuals, firms, or companies, whose turnover during the financial year exceeds the limits specified below to get their books of accounts audited by a Practicing Chartered Accountant:
-        </p>
-        <ul class="list-disc pl-8 space-y-2">
-          <li>For persons carrying on business above the specified limit as per income Tax Act.</li>
-          <li>For persons carrying on profession above specified limit as per Income Tax Act.</li>
-          <li>Asset Due diligence</li>
-        </ul>
+    <!-- ITR Services Section -->
+    <section id="itr-services">
+      <div class="text-center mb-10 sm:mb-14">
+        
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Income Tax Return (ITR) Services</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">Complete ITR filing, tax planning, audit, and compliance solutions for individuals and businesses.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
       </div>
 
-      <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
 
-<grok-card data-id="0523df" data-type="image_card"></grok-card>
+        <!-- Card 1: ITR Filing -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-file-invoice text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Income Tax Return (ITR) Filing</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Preparation and filing of ITR Forms (ITR-1 to ITR-7) depending on your category—salaried, business, partnership, or company. We ensure accuracy, timely submission, and maximum eligible deductions.
+          </p>
+        </div>
 
+        <!-- Card 2: Tax Planning -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-lightbulb text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Tax Planning & Advisory</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Strategic advice to minimize tax liability through proper structuring of income, investments, and expenses, while staying compliant with the Income-tax Act, 2025.
+          </p>
+        </div>
 
+        <!-- Card 3: Advance Tax -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-calendar-check text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Advance Tax & Self-Assessment Tax</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Calculation and guidance for timely payment of Advance Tax (Form 280) and Self-Assessment Tax, helping you avoid interest under sections 424/425 of Income Tax Act 2025.
+          </p>
+        </div>
 
+        <!-- Card 4: Tax Audit -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-magnifying-glass-chart text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Tax Audit & Reporting</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Conducting audits under Section 63 of Income Tax Act 2025 and filing Form 3CA/3CB with Form 3CD, ensuring compliance for businesses exceeding prescribed turnover limits.
+          </p>
+        </div>
+
+        <!-- Card 5: Scrutiny Support -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gavel text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Scrutiny & Assessment Support</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Professional representation in case of notices including preparation of replies, documentation, and liaison with tax authorities.
+          </p>
+        </div>
+
+        <!-- Card 6: Trust Audit -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-building-columns text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Trust Audit – Form 10BB</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Mandatory audit report for charitable and religious trusts/institutions registered under Section 12AB or approved under Section 10(23C). We prepare and file Form 10BB ensuring compliance with Sections 11, 12, and 13.
+          </p>
+        </div>
+
+        <!-- Card 7: Certificates -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-certificate text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Certificates & Other Filings</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Assistance with Form 15CA/15CB for foreign remittances, lower/nil deduction certificates under Section 197, and other specialized compliance needs.
+          </p>
+        </div>
+
+        <!-- Card 8: Appeals -->
+        <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-scale-balanced text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-gray-900 mb-2">Appeals & Litigation Support</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Drafting and filing appeals before CIT(A), ITAT, and higher authorities, with complete advisory and representation.
+          </p>
+        </div>
 
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="max-w-4xl mx-auto">
-      <h2 class="gradient-title text-3xl font-bold mb-8">The Audit Services at MKDA Include:</h2>
+    <!-- TDS Compliance Section -->
+    <section id="tds-services" class="bg-gradient-to-br from-slate-50 to-blue-50 -mx-4 px-4 sm:px-8 py-12 sm:py-16 rounded-3xl">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="inline-block px-4 py-1.5 bg-blue-900 text-white text-xs font-semibold uppercase tracking-wider rounded-full mb-4">Compliance</span>
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">TDS Compliance Services</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">Complete TDS/TCS return filing, correction, and compliance management.</p>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
 
-      <ul class="grid md:grid-cols-2 gap-6 text-gray-600">
-        <li class="p-6 bg-blue-50 rounded-xl border border-blue-200">Tax Audit, Financial Audit</li>
-        <li class="p-6 bg-blue-50 rounded-xl border border-blue-200">Statutory Audit for Companies</li>
-        <li class="p-6 bg-blue-50 rounded-xl border border-blue-200">Concurrent Audit</li>
-        <li class="p-6 bg-blue-50 rounded-xl border border-blue-200">Management Audit</li>
-        <li class="p-6 bg-blue-50 rounded-xl border border-blue-200">External audits, Internal audits</li>
-        <li class="p-6 bg-blue-50 rounded-xl border border-blue-200">Compliance audits</li>
-      </ul>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-6xl mx-auto">
 
-      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <!-- TDS Card 1 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Form 24Q – Salary TDS</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            We handle quarterly filing of Form 24Q for tax deducted at source on salaries, including preparation and issuance of Form 16 to employees.
+          </p>
+        </div>
 
+        <!-- TDS Card 2 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-500 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Form 26Q – Non-Salary</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Accurate filing of Form 26Q for TDS on payments other than salaries, such as contractor fees, professional charges, rent, and interest.
+          </p>
+        </div>
+
+        <!-- TDS Card 3 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-400 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Form 27Q – Non-Residents</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Specialized support for filing Form 27Q covering TDS on payments made to non-residents, ensuring compliance with international taxation rules.
+          </p>
+        </div>
+
+        <!-- TDS Card 4 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Form 27EQ – TCS Returns</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Assistance with filing Form 27EQ for Tax Collected at Source (TCS), covering transactions like sale of goods, scrap, or specified services.
+          </p>
+        </div>
+
+        <!-- TDS Card 5 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-700 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 sm:col-span-2 lg:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Correction & Compliance</h3>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            We manage TDS return corrections, challan adjustments, and compliance with CPC (TDS) notices to avoid penalties and ensure seamless tax credit reflection in Form 26AS.
+          </p>
+        </div>
 
       </div>
     </section>
 
-    <!-- FAQs Section (Income Tax Audit - No Image Version) -->
-<section id="faqs" class="py-20 bg-gray-50">
-  <div class="max-w-4xl mx-auto px-6">
-    <!-- Section Title -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-        Frequently Asked Questions
-      </h2>
-      <div class="h-1 w-24 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full mx-auto"></div>
-    </div>
-
-    <!-- Accordion FAQs -->
-    <div class="space-y-4">
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group" open>
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          Is income tax audit mandatory?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          An income tax audit is mandated on all companies, limited liability partnerships (LLPs), and individuals whose turnover crosses a particular threshold limit.
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-12 sm:py-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10 sm:mb-12">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <div class="h-1 w-20 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full mx-auto"></div>
         </div>
-      </details>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What is the limit for Tax Audit for AY 2021-22?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          The Finance Act of 2021 has increased the threshold limit from Rs. 5 crores to Rs. 10 crores, effective from 2021-22 onwards.
-        </div>
-      </details>
+        <div class="space-y-4">
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group" open>
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              Who needs to file an Income Tax Return (ITR)?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Any individual, HUF, firm, company, or any other person whose gross total income exceeds the basic exemption limit is required to file an ITR. Additionally, persons with foreign assets, wanting refunds, or seeking to carry forward losses must also file.
+            </div>
+          </details>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          How do I calculate Trading Turnover to check tax audit applicability?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-2">
-            <li><strong>Trading Turnover for Intraday Trading</strong> = Absolute Turnover.</li>
-            <li><strong>Trading Turnover for F&O Trading</strong><br>
-              Futures = Absolute Turnover.<br>
-              Options = Absolute Turnover + Premium on Sale of Options.
-            </li>
-          </ul>
-        </div>
-      </details>
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What is the due date for filing ITR?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              For individuals and non-audit cases, the due date is usually July 31st. For businesses requiring audit, it is October 31st. Transfer pricing cases have a deadline of November 30th.
+            </div>
+          </details>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What is the turnover limit for income tax audit?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          A taxpayer must have a tax audit carried out if the sales, turnover, or gross receipts of a business exceed Rs 1 crore in the financial year.
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              When is a Tax Audit mandatory?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Tax audit under Section 63 of Income Tax Act 2025 is mandatory if business turnover exceeds the prescribed limit or if profession receipts exceed the specified threshold. The audit report must be filed in Form 3CA/3CB with Form 3CD.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What are the penalties for late TDS filing?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Late filing of TDS returns attracts a late fee of ₹200 per day until the return is filed, subject to a maximum of the TDS amount. Additionally, interest @1.5% per month is charged for late deposit of TDS.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What documents are needed for ITR filing?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Common documents include PAN, Aadhaar, Form 16/16A, bank statements, investment proofs (80C, 80D, etc.), capital gains statements, rental income details, and Form 26AS/AIS. Business owners also need P&L and Balance Sheet.
+            </div>
+          </details>
         </div>
-      </details>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
     <!-- CTA -->
-    <section class="max-w-4xl mx-auto text-center py-12 bg-blue-50 rounded-2xl">
-      <p class="text-2xl font-bold text-blue-900 mb-4">
-        Contact us today to see how we can assist you.
-      </p>
+    <section class="max-w-4xl mx-auto text-center py-10 sm:py-12 bg-blue-50 rounded-2xl px-6">
+      <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3">
+        Need Help with Income Tax Compliance?
+      </h3>
+      <p class="text-gray-600 mb-6 text-sm sm:text-base">Our experienced team is ready to assist you with all your income tax and TDS needs.</p>
+      <a href="./contact.html" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg">
+        Contact Us Today
+      </a>
     </section>
 
   </main>
@@ -256,4 +411,3 @@
 
 </body>
 </html>
-

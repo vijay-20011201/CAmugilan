@@ -1,4 +1,4 @@
-<!-- ================= TOP BAR ================= -->
+<!-- ================= TOP BAR =================
 <div class="fixed top-0 left-0 w-full bg-blue-700 text-white text-xs sm:text-sm z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex justify-between items-center">
     <div class="flex gap-3 sm:gap-6">
@@ -9,21 +9,21 @@
     <span class="hidden sm:inline">📍 Kumudepalli,Hosur</span>
     <span class="sm:hidden">📍 Kumudepalli Hosur</span>
   </div>
-</div>
+</div> -->
 
 <!-- ================= NAVBAR ================= -->
-<nav class="fixed top-[32px] sm:top-[36px] left-0 w-full bg-white shadow z-40">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="flex items-center justify-between h-16 sm:h-20">
+<nav class="fixed top-0 left-0 w-full bg-white shadow z-40">
+  <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6">
+    <div class="flex items-center justify-between h-14 sm:h-16 md:h-20">
 
       <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-2 sm:gap-3">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 bg-blue-700 text-white rounded-lg flex items-center justify-center font-bold text-sm sm:text-base">
+      <a href="index.html" class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <div class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 bg-[#1e3a8a] text-white rounded-lg flex items-center justify-center font-bold text-xs sm:text-sm md:text-base">
           CA
         </div>
         <div class="leading-tight">
-          <h1 class="font-bold text-sm sm:text-lg">Mugilan Poonkundran & Co</h1>
-          <p class="text-xs text-gray-500 hidden sm:block">Chartered Accountant</p>
+          <h1 class="font-bold text-xs sm:text-sm md:text-lg truncate max-w-[140px] sm:max-w-none">Mugilan Poonkundran & Co</h1>
+          <p class="text-[10px] sm:text-xs text-gray-500 hidden sm:block">Chartered Accountant</p>
         </div>
       </a>
 
@@ -32,7 +32,7 @@
         <a href="index.html" class="hover:text-blue-700 transition">Home</a>
         <a href="./aboutus.html" class="hover:text-blue-700 transition">About</a>
 
-        <!-- Services Dropdown -->
+          <!-- Services Dropdown (Two Columns Side by Side) -->
         <div class="relative group">
           <button class="flex items-center gap-1 hover:text-blue-700 transition py-4">
             Services
@@ -41,112 +41,56 @@
             </svg>
           </button>
 
-          <!-- Mega Menu - NO GAP, uses pt-4 inside for visual spacing -->
-          <div class="absolute left-1/2 -translate-x-1/2 top-full pt-0
-                     w-[800px] opacity-0 invisible 
-                     group-hover:opacity-100 group-hover:visible 
-                     transition-all duration-300 z-50">
-            
-            <!-- Invisible bridge to prevent hover break -->
+          <div class="absolute left-0 top-full pt-0 w-[420px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+             <!-- Invisible bridge -->
             <div class="h-2"></div>
             
-            <div class="bg-white rounded-xl shadow-2xl border border-gray-100 p-6 sm:p-8">
-              <!-- Decorative top bar -->
-              <div class="absolute top-2 left-0 right-0 mx-auto w-[calc(100%-48px)] h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
+            <div class="bg-white rounded-xl shadow-2xl border border-gray-100 p-4 overflow-hidden">
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-400"></div>
               
-              <div class="grid grid-cols-3 gap-6 text-sm mt-2">
-
-                <!-- Registration -->
+              <div class="grid grid-cols-2 gap-4">
+                <!-- Left Column: Main Services -->
                 <div>
-                  <h4 class="font-bold text-blue-700 mb-3 uppercase text-xs tracking-wider">Registration Services</h4>
-                  <ul class="space-y-2">
-                    <li><a href="./propretership.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Proprietorship</a></li>
-                    <li><a href="../partnershipfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👥 Partnership Firm</a></li>
-                    <li><a href="./llpregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 LLP Registration</a></li>
-                    <li><a href="./privatelimited.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Pvt Ltd Company</a></li>
-                    <li><a href="./onepersoncompany.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👤 One Person Company</a></li>
-                    <li><a href="./section8.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏫 Section 8 Company</a></li>
-                    <li><a href="./startup.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🚀 Start-Up Registration</a></li>
-                    <li><a href="./foodlicence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Food License</a></li>
-                  </ul>
+                  <a href="./audit&assurance.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                     <span>📊</span> Audit & Assurance
+                  </a>
+                  <a href="./incometax.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                     <span>📑</span> Taxation Services
+                  </a>
+                  <a href="./gstregistration.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                     <span>🧾</span> GST Services
+                  </a>
                 </div>
 
-                <!-- Compliance -->
-                <div>
-                  <h4 class="font-bold text-blue-700 mb-3 uppercase text-xs tracking-wider">Compliance & Filing</h4>
-                  <ul class="space-y-2">
-                    <li><a href="../gstregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧾 GST Registration</a></li>
-                    <li><a href="./taxresidence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Tax Residence Certificate</a></li>
-                    <li><a href="../acc&outfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📊 Accounting Outsourcing and Payroll Services</a></li>
-                    <li><a href="./lowertds.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📜Lower TDS Returns</a></li>
-                    <li><a href="./msme.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏭 MSME Registration</a></li>
-                    <li><a href="./importandexport.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🌍 Import & Export Code</a></li>
-                    
-                  </ul>
+                <!-- Right Column: Others -->
+                <div class="border-l border-gray-200 pl-4">
+                  <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 px-3">Others</p>
+                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                     <span>📋</span> PF Registration
+                  </a>
+                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                     <span>📝</span> PF Returns
+                  </a>
+                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                     <span>🏢</span> Company Registration
+                  </a>
+                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                     <span>📄</span> Annual Compliance
+                  </a>
                 </div>
-
-                <!-- Advisory -->
-                <div>
-                  <h4 class="font-bold text-blue-700 mb-3 uppercase text-xs tracking-wider">Advisory Services</h4>
-                  <ul class="space-y-2">
-                    <li><a href="./cfoservice.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧠 CFO Services</a></li>
-                    <li><a href="./payroll.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">💼 Payroll Services</a></li>
-                    <li><a href="./incometax.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📑 Income Tax Audit</a></li>
-                    <li><a href="../shop&est.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏪 Shop & Establishment</a></li>
-                    <li><a href="./pfregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 PF Registration</a></li>
-                    <li><a href="./ptregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 PT Registration</a></li>
-                    <li><a href="./secretarial.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📋 Secretarial Services</a></li>
-                  </ul>
-                </div>
-
               </div>
             </div>
           </div>
         </div>
 
-
+        <!-- Government Links Dropdown - Hidden for now -->
         
-
-
-        
-        
-          <!-- Government Links Dropdown -->
-        <div class="relative group">
-          <button class="flex items-center gap-1 hover:text-blue-700 transition py-4">
-            Gov.Official Links
-            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          
-          <div class="absolute left-0 top-full pt-0 w-56 opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-all duration-300 z-50">
-            <div class="h-2"></div>
-            <div class="bg-white rounded-xl shadow-2xl border border-gray-100 py-3 overflow-hidden">
-              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-blue-400"></div>
-              <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
-                <span>🧾</span> GST Portal
-              </a>
-              <a href="https://www.incometax.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
-                <span>📑</span> Income Tax
-              </a>
-              <a href="https://foscos.fssai.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
-                <span>🍽️</span> FSSAI (Food License)
-              </a>
-              <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
-                <span>🏢</span> MCA (Company Affairs)
-              </a>
-              <a href="https://ewaybillgst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-5 py-3 hover:bg-blue-50 hover:text-blue-700 transition text-sm">
-                <span>🚛</span> Goods and Service
-              </a>
-            </div>
-          </div>
-        </div>
         <a href="./contact.html" class="hover:text-blue-700 transition">Contact</a>
       </div>
 
       <!-- Right CTA (Desktop) -->
       <div class="hidden lg:block">
-        <button id="openConsultationModal" class="bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-800 transition shadow-lg">
+        <button id="openConsultationModal" class="bg-[#1e3a8a] text-white px-4 md:px-5 py-2 md:py-2.5 rounded-full text-xs md:text-sm font-semibold hover:bg-blue-800 transition shadow-lg">
           Book Consultation
         </button>
       </div>
@@ -155,7 +99,7 @@
       <button 
         id="menuBtn" 
         onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
-        class="lg:hidden text-2xl p-2">
+        class="lg:hidden text-xl sm:text-2xl p-1.5 sm:p-2 hover:bg-gray-100 rounded-lg transition">
         ☰
       </button>
     </div>
@@ -163,71 +107,43 @@
 
   <!-- ================= MOBILE MENU ================= -->
   <div id="mobileMenu" class="hidden lg:hidden bg-white border-t max-h-[80vh] overflow-y-auto">
-    <div class="px-4 py-4 space-y-1">
-      <a class="block py-3 px-2 hover:bg-gray-50 rounded-lg font-medium" href="index.html">Home</a>
-      <a class="block py-3 px-2 hover:bg-gray-50 rounded-lg font-medium" href="./aboutus.html">About</a>
+    <div class="px-3 sm:px-4 py-3 sm:py-4 space-y-1">
+      <a class="block py-2.5 sm:py-3 px-2 hover:bg-gray-50 rounded-lg font-medium text-sm sm:text-base" href="index.html">Home</a>
+      <a class="block py-2.5 sm:py-3 px-2 hover:bg-gray-50 rounded-lg font-medium text-sm sm:text-base" href="./aboutus.html">About</a>
 
-     <!-- Mobile Services Accordion -->
+     <!-- Mobile Services Dropdown -->
        <div>
         <button 
           id="mobileServiceBtn"
-          class="w-full flex justify-between items-center py-3 px-2 hover:bg-gray-50 rounded-lg font-medium">
+          class="w-full flex justify-between items-center py-2.5 sm:py-3 px-2 hover:bg-gray-50 rounded-lg font-medium text-sm sm:text-base">
           Services
-          <span id="servicesArrow" class="transition-transform duration-300">▾</span>
-        </button>
-
-        <div id="mobileServices" class="hidden pl-4 pb-2 space-y-1 text-sm border-l-2 border-blue-600 ml-4 mt-2">
-          <p class="font-bold text-blue-700 pt-2 pb-1">Registration</p>
-          <a href="./propretership.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Proprietorship</a>
-          <a href="../partnershipfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👥 Partnership Firm</a>
-          <a href="./llpregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 LLP Registration</a>
-          <a href="./privatelimited.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 Pvt Ltd Company</a>
-          <a href="./onepersoncompany.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">👤 One Person Company</a>
-          <a href="./section8.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏫 Section 8 Company</a>
-          <a href="./startup.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🚀 Start-Up Registration</a>
-          <a href="./foodlicence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Food License</a>
-
-          <p class="font-bold text-blue-700 pt-3 pb-1">Compliance</p>
-          <a href="../gstregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧾 GST Registration</a>
-          <a href="./taxresidence.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📄 Tax Residence Certificate</a>
-          <a href="../acc&outfirm.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📊 Accounting Outsourcing and Payroll Services</a>
-          <a href="./lowertds.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📜Lower TDS Returns</a>
-          <a href="./msme.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏭 MSME Registration</a>
-          <a href="./importandexport.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🌍 Import & Export Code</a>
-
-          <p class="font-bold text-blue-700 pt-3 pb-1">Advisory</p>
-          <a href="./cfoservice.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧠 CFO Services</a>
-          <a href="./payroll.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">💼 Payroll Services</a>
-          <a href="./incometax.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📑 Income Tax Audit</a>
-          <a href="../shop&est.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏪 Shop & Establishment</a>
-          <a href="./pfregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 PF Registration</a>
-          <a href="./ptregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏛 PT Registration</a>
-          <a href="./secretarial.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📋 Secretarial Services</a>
-        </div>
-      </div>
-
-       <!-- Government Links Dropdown -->
-       <div>
-        <button 
-          id="mobileGovBtn"
-          onclick="document.getElementById('mobileGovLinks').classList.toggle('hidden'); this.querySelector('span').classList.toggle('rotate-180')"
-          class="w-full flex justify-between items-center py-3 px-2 hover:bg-gray-50 rounded-lg font-medium">
-          Gov.Official Links
           <span class="transition-transform duration-300">▾</span>
         </button>
-      
-        <div id="mobileGovLinks" class="hidden pl-4 pb-2 space-y-1 text-sm border-l-2 border-blue-600 ml-4 mt-2">
-          <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🧾 GST Portal</a>
-          <a href="https://www.incometax.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">📑 Income Tax</a>
-          <a href="https://foscos.fssai.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🍽️ FSSAI (Food License)</a>
-          <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🏢 MCA (Company Affairs)</a>
-          <a href="https://ewaybillgst.gov.in/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-blue-700 transition py-1">🚛 Goods and Service</a>
+
+        <div id="mobileServices" class="hidden pl-3 sm:pl-4 pb-2 space-y-2 text-xs sm:text-sm border-l-2 border-blue-600 ml-3 sm:ml-4 mt-2">
+          <!-- Main Services -->
+          <div class="space-y-1">
+            <a href="./audit&assurance.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📊</span> Audit & Assurance</a>
+            <a href="./incometax.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📑</span> Taxation Services</a>
+            <a href="./gstregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>🧾</span> GST Services</a>
+          </div>
+
+          <!-- Others -->
+          <div class="border-t border-gray-200 pt-2">
+            <p class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Others</p>
+            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📋</span> PF Registration</a>
+            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📝</span> PF Returns</a>
+            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>🏢</span> Company Registration</a>
+            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📄</span> Annual Compliance</a>
+          </div>
         </div>
       </div>
-      <a class="block py-3 px-2 hover:bg-gray-50 rounded-lg font-medium" href="./contact.html">Contact</a>
 
-      <div class="pt-4">
-        <button onclick="openConsultationModal()" class="block w-full bg-blue-700 text-white text-center py-3 rounded-xl font-semibold hover:bg-blue-800 transition">
+       <!-- Government Links Dropdown - Hidden for now -->
+      <a class="block py-2.5 sm:py-3 px-2 hover:bg-gray-50 rounded-lg font-medium text-sm sm:text-base" href="./contact.html">Contact</a>
+
+      <div class="pt-3 sm:pt-4">
+        <button onclick="openConsultationModal()" class="block w-full bg-blue-700 text-white text-center py-2.5 sm:py-3 rounded-xl font-semibold text-sm sm:text-base hover:bg-blue-800 transition">
           Book Consultation
         </button>
       </div>
