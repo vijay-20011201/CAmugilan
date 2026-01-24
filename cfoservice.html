@@ -3,324 +3,339 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CFO Services in Bangalore | Virtual CFO Advisory – MKDA</title>
+  <title>Virtual CFO Services | Mugilan Poonkundran & Co</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+
     .scrollbar-hide::-webkit-scrollbar { display: none; }
     .scrollbar-hide { scrollbar-width: none; }
 
-    .section-title {
+    .gradient-title {
       background: linear-gradient(to right, #1d4ed8, #2563eb);
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, #1d4ed8, #3b82f6);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover::before {
+      transform: scaleX(1);
     }
   </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              400: '#60a5fa',
+              500: '#2563eb',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="bg-white text-slate-800">
 
-<!-- Navbar -->
-<div id="navbar"></div>
+  <!-- Navbar -->
+  <div id="navbar"></div>
 
-<!-- HERO -->
-<section class="relative min-h-[520px] pt-32 flex items-center overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="assets/hero1.jpg" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-800/85 to-blue-700/70"></div>
-  </div>
+  <!-- HERO -->
+  <section class="relative min-h-[480px] pt-28 flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="assets/cfo.avif" alt="Virtual CFO Services" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/50"></div>
+    </div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 text-white">
-    <nav class="text-sm text-white/70 mb-6 flex gap-2">
-      <a href="index.html">Home</a> /
-      <a href="services.html">Services</a> /
-      <span class="text-blue-300">CFO Services</span>
-    </nav>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 text-white">
+      <nav class="text-sm text-white/70 mb-6 flex gap-2">
+        <a href="index.html" class="hover:text-blue-300">Home</a> /
+        <span class="text-blue-300">Virtual CFO Services</span>
+      </nav>
 
-    <h1 class="text-4xl md:text-5xl font-bold mb-6">
-      CFO Services in Bangalore
-      <span class="block text-blue-300 text-2xl mt-2">
-        Virtual & Fractional CFO Advisory
-      </span>
-    </h1>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+        Virtual CFO Services
+      </h1>
 
-    <p class="text-lg text-white/80 max-w-2xl">
-      Strategic financial leadership for startups and growing businesses
-      without the cost of a full-time CFO.
-    </p>
-  </div>
-</section>
- <nav class="sticky top-[96px] sm:top-[116px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
+      <p class="text-base sm:text-lg text-white/85 max-w-2xl">
+        Virtual CFO Services for Growing Businesses
+      </p>
+    </div>
+  </section>
+
+  <!-- Sticky Navigation -->
+  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
-            <button data-section="overview" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Overview</button>
-            <button data-section="why" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Outsource</button>
-            <button data-section="benefits" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Benefits</button>
-  
-            <button data-section="types" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">CFO Types</button>
-           
-            <button data-section="faqs" class="px-5 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
-        </div>
+      <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
+        <button data-section="overview" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Overview</button>
+        <button data-section="benefits" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Benefits</button>
+        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<!-- MAIN -->
-<main class="max-w-7xl mx-auto px-4 py-16 space-y-20">
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 py-12 sm:py-16 space-y-16 sm:space-y-20">
 
-<!-- Overview -->
-<section id="overview" class="max-w-4xl mx-auto">
-  <h2 class="section-title text-3xl font-bold mb-6">
-    CFO Services & Strategic Advisory
-  </h2>
-  <p class="text-gray-600 leading-relaxed">
-    MKDA is a financial and Strategic business advisory company located in Bangalore, the startup hub of India. We provide extensive support and hands-on experience in finance, sales & marketing, operations, human resources, business planning, and funding. We are a vital contributor to developing, managing and monitoring early startups and growth-oriented companies.
-  </p>
-  <p class="text-gray-600 mt-4">
-    Our team of experts has been invaluable in dealing with Finance, CFO and secretarial functions, Taxes and Litigations, Risk Assessment and Mitigation, Business Plans, Budgeting, and Treasury Management, Branding, Customer issues, Product sales, and Marketing strategy. Our services are designed to fill the market need for a critical management executive with a complete business approach playing the role of strategic advisor in addition to the functions of the CFO role.
-  </p>
-</section>
+    <!-- Overview Section -->
+    <section id="overview" class="max-w-4xl mx-auto">
+      <div class="text-center mb-10 sm:mb-12">
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Virtual CFO Services</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
 
-<!-- Why Outsource -->
-<section id="why" class="max-w-4xl mx-auto">
-  <h2 class="section-title text-3xl font-bold mb-6">
-    Why Outsource CFO Services?
-  </h2>
-
-  <ul class="grid sm:grid-cols-2 gap-4">
-    <li class="p-4 border rounded-xl">Cash flow & working capital management</li>
-    <li class="p-4 border rounded-xl">Financial forecasting & budgeting</li>
-    <li class="p-4 border rounded-xl">Funding & investor advisory</li>
-    <li class="p-4 border rounded-xl">Risk assessment & mitigation</li>
-    <li class="p-4 border rounded-xl">Financial systems & MIS setup</li>
-    <li class="p-4 border rounded-xl">Operational performance monitoring</li>
-  </ul>
-
-  <div class="mt-6 bg-gray-50 p-6 rounded-xl">
-    <p class="font-medium mb-3">CFO services help solve:</p>
-    <ul class="list-disc pl-6 text-gray-600 space-y-1">
-      <li>Poor cash flow & profitability</li>
-      <li>High operating costs</li>
-      <li>Difficulty in raising capital</li>
-      <li>Debt & loan management issues</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Benefits -->
-<section id="benefits" class="max-w-4xl mx-auto">
-  <h2 class="section-title text-3xl font-bold mb-6">
-    Benefits of CFO Services
-  </h2>
-
-  <ul class="grid md:grid-cols-3 gap-4">
-    <li class="p-6 border rounded-xl">Save time & cost</li>
-    <li class="p-6 border rounded-xl">Better cash flow control</li>
-    <li class="p-6 border rounded-xl">Data-driven decisions</li>
-    <li class="p-6 border rounded-xl">Scalable growth planning</li>
-    <li class="p-6 border rounded-xl">Strategic exit planning</li>
-    <li class="p-6 border rounded-xl">Systemized financial operations</li>
-  </ul>
-</section>
-
-<!-- Types -->
-<section id="types" class="max-w-4xl mx-auto">
-  <h2 class="section-title text-3xl font-bold mb-6">
-    Types of CFO Services
-  </h2>
-
-  <ul class="space-y-4">
-    <li class="p-5 border rounded-xl">
-      <strong>Virtual CFO:</strong> Ongoing strategic financial partner
-    </li>
-    <li class="p-5 border rounded-xl">
-      <strong>Fractional / Part-Time CFO:</strong> CFO expertise at lower cost
-    </li>
-    <li class="p-5 border rounded-xl">
-      <strong>Interim CFO:</strong> Temporary CFO during transitions
-    </li>
-    <li class="p-5 border rounded-xl">
-      <strong>Special Purpose CFO:</strong> IPO, fundraising, restructuring
-    </li>
-  </ul>
-</section>
-
-<!-- FAQs Section (No Image Version) -->
-<section id="faqs" class="py-20 bg-gray-50">
-  <div class="max-w-4xl mx-auto px-6">
-    <!-- Section Title -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-        Frequently Asked Questions
-      </h2>
-      <div class="h-1 w-24 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full mx-auto"></div>
-    </div>
-
-    <!-- Accordion FAQs -->
-    <div class="space-y-4">
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What are outsourced CFO services?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          Outsourced accounting services give a company financial and managerial flexibility by helping them manage the financial, business, accounting, and operational activities and meet the customers' challenging demands. An outsourced CFO can be used full-time, part-time, or as an interim for the duration of a project.
+      <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-8 sm:p-10 border border-blue-100">
+        <p class="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
+          Our Virtual CFO services take care of your financial management needs without hiring a full-time CFO. We support businesses with accounting supervision, tax filings, compliance, and financial reporting.
+        </p>
+        <div class="flex items-start gap-3 bg-white/70 rounded-xl p-4 border border-blue-100">
+          <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-chart-line text-lg"></i>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            You get expert guidance, better financial control, and peace of mind while focusing on your core business.
+          </p>
         </div>
-      </details>
+      </div>
+    </section>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What is included in virtual CFO services?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-2">
-            <li>A virtual CFO does the bookkeeping for the client.</li>
-            <li>Virtual CFO takes care of the financial & accounting functions of an organization.</li>
-            <li>Virtual CFO helps SMEs in Financial advisory, cash flow forecasting, budgeting, accounting rules and procedures, internal control, debt planning, and corporate governance.</li>
-            <li>CFO virtual financial services help in focusing on the company's commercial tasks.</li>
-            <li>They work at the top level and perform the same activities as a CFO</li>
-          </ul>
+    <!-- Benefits Section -->
+    <section id="benefits" class="bg-gradient-to-br from-slate-50 to-blue-50 -mx-4 px-4 sm:px-8 py-12 sm:py-16 rounded-3xl">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="inline-block px-4 py-1.5 bg-blue-900 text-white text-xs font-semibold uppercase tracking-wider rounded-full mb-4">Key Advantages</span>
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Benefits of CFO Services</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="max-w-3xl mx-auto bg-white rounded-2xl p-8 sm:p-10 shadow-lg border border-blue-100">
+        <div class="space-y-5">
+          <!-- Benefit 1 -->
+          <div class="flex items-start gap-4 group">
+            <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </div>
+            <p class="text-slate-800 text-base sm:text-lg font-medium">Affordable CFO Support</p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="flex items-start gap-4 group">
+            <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </div>
+            <p class="text-slate-800 text-base sm:text-lg font-medium">Professional Financial Advice</p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="flex items-start gap-4 group">
+            <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </div>
+            <p class="text-slate-800 text-base sm:text-lg font-medium">Timely Compliance & Reports</p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="flex items-start gap-4 group">
+            <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </div>
+            <p class="text-slate-800 text-base sm:text-lg font-medium">Flexible & Scalable Services</p>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="flex items-start gap-4 group">
+            <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-check text-white text-sm"></i>
+            </div>
+            <p class="text-slate-800 text-base sm:text-lg font-medium">Better Business Decisions</p>
+          </div>
         </div>
-      </details>
+      </div>
+    </section>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What is fractional CFO service?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          A fractional CFO lends their financial help to a startup on a contractual basis. Fractional or part-time CFOs have extensive previous CFO-level experience but help startups on a temporary basis.
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-12 sm:py-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10 sm:mb-12">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <div class="h-1 w-20 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full mx-auto"></div>
         </div>
-      </details>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What are the main responsibilities of a CFO?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          A CFO will have to interact with the members of a company, both senior and junior. The main responsibilities of a CFO are:
-          <ul class="list-disc pl-6 space-y-2 mt-3">
-            <li>Providing leadership and management for the finance and accounting team.</li>
-            <li>Providing strategic recommendations to the company.</li>
-            <li>Managing the processes for financial forecasting, budgets, and preparation of all financial reporting.</li>
-            <li>Advising on long-term business and financial planning</li>
-            <li>Establishing relations with senior management and external partners.</li>
-            <li>Reviewing all formal finance, HR, and IT-related procedures</li>
-          </ul>
+        <div class="space-y-4">
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group" open>
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What is a Virtual CFO?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              A Virtual CFO is an outsourced Chief Financial Officer who provides strategic financial management, planning, and advisory services to businesses without being a full-time employee. They handle accounting supervision, compliance, reporting, and financial decision-making remotely.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              Who needs Virtual CFO services?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Growing businesses, startups, SMEs, and companies that need expert financial guidance but cannot afford or don't require a full-time CFO benefit most from Virtual CFO services. It's ideal for businesses looking to scale, raise funding, or improve financial management.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              What services are included in Virtual CFO?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Services include financial planning and budgeting, cash flow management, MIS reporting, tax planning and compliance, accounting supervision, financial analysis, business advisory, fund raising support, and strategic financial decision-making.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              How is Virtual CFO different from hiring a full-time CFO?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              A Virtual CFO provides the same expertise and services at a fraction of the cost. You pay only for the services you need, without bearing the burden of full-time salary, benefits, and overhead costs. It's flexible and scalable based on your business requirements.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              How often will I receive financial reports?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              We provide monthly MIS reports, quarterly financial reviews, and annual financial statements as standard. The frequency can be customized based on your business needs—weekly, fortnightly, or as required.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              Can Virtual CFO help with fundraising?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Yes, we assist in preparing financial projections, business plans, investor presentations, due diligence documentation, and valuation support for fundraising from investors, banks, or venture capital firms.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              Will my financial data be secure?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Absolutely. We maintain strict confidentiality protocols and use secure systems for data storage and transmission. All financial information is protected under professional ethics and non-disclosure agreements.
+            </div>
+          </details>
+
+          <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
+            <summary class="cursor-pointer px-5 py-4 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition text-sm sm:text-base">
+              How do I get started with Virtual CFO services?
+              <svg class="w-5 h-5 text-blue-700 transition-transform group-open:rotate-180 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
+              Simply contact us for an initial consultation. We'll assess your business needs, understand your goals, and create a customized service plan. Once agreed, we begin with financial assessment and setup, followed by ongoing support.
+            </div>
+          </details>
         </div>
-      </details>
+      </div>
+    </section>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          Who needs a virtual CFO?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          Virtual CFOs benefit small organizations that may not have the financial resources to engage a full-time CFO.
-        </div>
-      </details>
+    <!-- CTA -->
+    <section class="max-w-4xl mx-auto text-center py-10 sm:py-12 bg-blue-50 rounded-2xl px-6">
+      <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3">
+        Ready to Strengthen Your Financial Management?
+      </h3>
+      <p class="text-gray-600 mb-6 text-sm sm:text-base">Get expert CFO guidance without the full-time cost. Let's grow your business together.</p>
+      <a href="./contact.html" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg">
+        Contact Us Today
+      </a>
+    </section>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What are the benefits of virtual CFO?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-2">
-            <li>A virtual CFO is less expensive than a full-time CFO.</li>
-            <li>All CFOs have financial experience. But a virtual CFO is more well-versed.</li>
-            <li>Flexibility - With a virtual CFO, the services continue, regardless of what happens to a member of the virtual team. The transition occurs with ease and won’t disrupt your process.</li>
-            <li>Accurate Financial Reporting</li>
-            <li>A virtual CFO is an expert in adapting to meet the needs of your team.</li>
-            <li>A virtual CFO uses proven methods and approaches to grow your company.</li>
-            <li>A virtual CFO assesses the current state of your company and proceeds without wasting time.</li>
-          </ul>
-        </div>
-      </details>
+  </main>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What does a part-time CFO do?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          Part-time CFO responsibilities are as follows:
-          <ul class="list-disc pl-6 space-y-2 mt-3">
-            <li>Monthly financial reporting</li>
-            <li>Cash flow projections and assistance with the investor.</li>
-            <li>Ensures regulatory filings (like income tax and payroll tax filings) are done accurately and on time</li>
-          </ul>
-        </div>
-      </details>
+  <!-- Footer -->
+  <div id="footer"></div>
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What is the difference between a traditional CFO and a Virtual CFO?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          An organization appoints a traditional CFO to carry out the activities of a CFO. Whereas a virtual CFO offers external counsel and advice to an organization.
-        </div>
-      </details>
+  <!-- JavaScript -->
+  <script src="assets/js/loader.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-      <details class="bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden group">
-        <summary class="cursor-pointer px-6 py-5 font-semibold text-blue-900 flex justify-between items-center hover:bg-blue-50 transition">
-          What are the main services offered by a virtual CFO?
-          <svg class="w-6 h-6 text-blue-700 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </summary>
-        <div class="px-6 pb-5 text-gray-600 leading-relaxed">
-          <ul class="list-disc pl-6 space-y-2">
-            <li>Financial Management.</li>
-            <li>Budgetary Control.</li>
-            <li>GST Filing.</li>
-            <li>Income Tax Filing.</li>
-            <li>HR Management.</li>
-            <li>MIS Reporting.</li>
-            <li>Legal Process Work.</li>
-          </ul>
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
+      document.querySelectorAll("[data-section]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.getElementById(btn.dataset.section)?.scrollIntoView({ behavior: "smooth" });
+        });
+      });
 
-</main>
+      window.addEventListener("scroll", () => {
+        let current = "";
+        document.querySelectorAll("section[id]").forEach(section => {
+          const sectionTop = section.offsetTop - 200;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
 
-<!-- Footer -->
-<div id="footer"></div>
-
-<!-- JS -->
-<script src="assets/js/loader.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("[data-section]").forEach(btn => {
-      btn.onclick = () => document.getElementById(btn.dataset.section)?.scrollIntoView({ behavior: "smooth" });
+        document.querySelectorAll("[data-section]").forEach(btn => {
+          btn.classList.remove("text-blue-700", "bg-blue-50");
+          if (btn.dataset.section === current) {
+            btn.classList.add("text-blue-700", "bg-blue-50");
+          }
+        });
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
-

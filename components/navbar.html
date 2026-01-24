@@ -1,31 +1,15 @@
-<!-- ================= TOP BAR =================
-<div class="fixed top-0 left-0 w-full bg-blue-700 text-white text-xs sm:text-sm z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex justify-between items-center">
-    <div class="flex gap-3 sm:gap-6">
-      <span class="hidden sm:inline">📞 8870336446</span>
-      <span class="sm:hidden">📞 8870336446</span>
-      <span class="hidden sm:inline">✉️ camugilan.in@gmail.com</span>
-    </div>
-    <span class="hidden sm:inline">📍 Kumudepalli,Hosur</span>
-    <span class="sm:hidden">📍 Kumudepalli Hosur</span>
-  </div>
-</div> -->
-
 <!-- ================= NAVBAR ================= -->
 <nav class="fixed top-0 left-0 w-full bg-white shadow z-40">
   <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6">
     <div class="flex items-center justify-between h-14 sm:h-16 md:h-20">
-
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-2 sm:gap-3 shrink-0">
-        <div class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 bg-[#1e3a8a] text-white rounded-lg flex items-center justify-center font-bold text-xs sm:text-sm md:text-base">
-          CA
-        </div>
-        <div class="leading-tight">
-          <h1 class="font-bold text-xs sm:text-sm md:text-lg truncate max-w-[140px] sm:max-w-none">Mugilan Poonkundran & Co</h1>
-          <p class="text-[10px] sm:text-xs text-gray-500 hidden sm:block">Chartered Accountant</p>
-        </div>
-      </a>
+<!-- Logo -->
+<a href="index.html" class="flex items-center gap-2 sm:gap-3 shrink-0">
+  <img src="assets/calogo.png" alt="Mugilan Poonkundran & Co Logo" class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 object-contain">
+  <div class="leading-tight">
+    <h1 class="font-bold text-xs sm:text-sm md:text-lg truncate max-w-[140px] sm:max-w-none">Mugilan Poonkundran & Co</h1>
+    <p class="text-[10px] sm:text-xs text-gray-500 hidden sm:block">Chartered Accountant</p>
+  </div>
+</a>
 
       <!-- Center Menu (Desktop) -->
       <div class="hidden lg:flex items-center gap-8 font-medium text-gray-700">
@@ -41,7 +25,7 @@
             </svg>
           </button>
 
-          <div class="absolute left-0 top-full pt-0 w-[420px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+          <div class="absolute left-1/2 -translate-x-1/2 top-full pt-0 w-[550px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
              <!-- Invisible bridge -->
             <div class="h-2"></div>
             
@@ -51,39 +35,40 @@
               <div class="grid grid-cols-2 gap-4">
                 <!-- Left Column: Main Services -->
                 <div>
-                  <a href="./audit&assurance.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                  <a href="./audit&assurance.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
                      <span>📊</span> Audit & Assurance
                   </a>
-                  <a href="./incometax.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                  <a href="./incometax.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
                      <span>📑</span> Taxation Services
                   </a>
-                  <a href="./gstregistration.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
+                  <a href="./gstregistration.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
                      <span>🧾</span> GST Services
+                  </a>
+                  <a href="./DPIITRegistration.html" class="flex items-center gap-3 px-3 py-2.5 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
+                     <span>🏛️</span> DPIIT Registration
                   </a>
                 </div>
 
                 <!-- Right Column: Others -->
                 <div class="border-l border-gray-200 pl-4">
                   <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 px-3">Others</p>
-                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
-                     <span>📋</span> PF Registration
+                  <a href="./esicregistration.html" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
+                     <span>📋</span> ESIC Registration & Filings
                   </a>
-                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
-                     <span>📝</span> PF Returns
+                  <a href="./pfreturnfilling.html" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
+                     <span>📝</span> PF Return Filing Services
                   </a>
-                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
-                     <span>🏢</span> Company Registration
+                  <a href="./payrollprocessing.html" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
+                     <span>🏢</span> Payroll Processing
                   </a>
-                  <a href="#" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg">
-                     <span>📄</span> Annual Compliance
+                  <a href="./cfoservice.html" class="flex items-center gap-2 px-3 py-2 hover:bg-blue-50 hover:text-blue-700 transition text-sm rounded-lg whitespace-nowrap">
+                     <span>📄</span> CFO Services
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Government Links Dropdown - Hidden for now -->
         
         <a href="./contact.html" class="hover:text-blue-700 transition">Contact</a>
       </div>
@@ -126,20 +111,20 @@
             <a href="./audit&assurance.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📊</span> Audit & Assurance</a>
             <a href="./incometax.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📑</span> Taxation Services</a>
             <a href="./gstregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>🧾</span> GST Services</a>
+            <a href="./DPIITRegistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>🏛️</span> DPIIT Registration</a>
           </div>
 
           <!-- Others -->
           <div class="border-t border-gray-200 pt-2">
             <p class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Others</p>
-            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📋</span> PF Registration</a>
-            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📝</span> PF Returns</a>
-            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>🏢</span> Company Registration</a>
-            <a href="#" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📄</span> Annual Compliance</a>
+            <a href="./esicregistration.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📋</span> ESIC Registration & Filings</a>
+            <a href="./pfreturnfilling.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📝</span> PF Return Filing Services</a>
+            <a href="./payrollprocessing.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>🏢</span> Payroll Processing</a>
+            <a href="./cfoservice.html" class="flex items-center gap-2 hover:text-blue-700 transition py-1"><span>📄</span> CFO Services</a>
           </div>
         </div>
       </div>
 
-       <!-- Government Links Dropdown - Hidden for now -->
       <a class="block py-2.5 sm:py-3 px-2 hover:bg-gray-50 rounded-lg font-medium text-sm sm:text-base" href="./contact.html">Contact</a>
 
       <div class="pt-3 sm:pt-4">
@@ -155,7 +140,7 @@
 <div id="consultationModal" class="fixed inset-0 bg-black/60 hidden z-50 flex items-center justify-center p-4 transition-opacity duration-300">
   <div class="bg-white rounded-2xl shadow-xl border border-gray-100 max-w-lg w-full max-h-[90vh] overflow-y-auto relative scale-95 transition-transform duration-300">
     
-    <!-- Close Button - Increased size and z-index for better accessibility -->
+    <!-- Close Button -->
     <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-3xl font-light z-50 transition-colors">&times;</button>
 
     <!-- Header with Gradient Accent -->
@@ -242,29 +227,25 @@
             </svg>
           </div>
           
-          <!-- Custom Dropdown Options (scrollable, contained within modal) -->
+          <!-- Custom Dropdown Options -->
           <div id="modalDropdownOptions" 
                class="hidden absolute left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-xl z-[100] overflow-y-scroll"
                style="max-height: 200px;">
             <div class="py-1">
-              <div data-value="Sole Proprietorship Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Sole Proprietorship Registration</div>
-              <div data-value="GST Registration & Filing" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">GST Registration & Filing</div>
-              <div data-value="Income Tax Filing" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Income Tax Filing</div>
-              <div data-value="Company Incorporation" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Company Incorporation</div>
+              <!-- Main Services -->
               <div data-value="Audit & Assurance" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Audit & Assurance</div>
-              <div data-value="MSME Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">MSME Registration</div>
-              <div data-value="Trademark Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Trademark Registration</div>
-              <div data-value="FSSAI License" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">FSSAI License</div>
-              <div data-value="Professional Tax Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Professional Tax Registration</div>
-              <div data-value="Business Compliance Advisory" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Business Compliance Advisory</div>
-              <div data-value="LLP Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">LLP Registration</div>
-              <div data-value="One Person Company" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">One Person Company</div>
-              <div data-value="Section 8 Company" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Section 8 Company</div>
-              <div data-value="PF Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">PF Registration</div>
-              <div data-value="PT Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">PT Registration</div>
-              <div data-value="Payroll Services" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Payroll Services</div>
+              <div data-value="Taxation Services" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Taxation Services</div>
+              <div data-value="GST Services" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">GST Services</div>
+              <div data-value="DPIIT Registration" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">DPIIT Registration</div>
+              
+              <!-- Others -->
+              <div data-value="ESIC Registration & Filings" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">ESIC Registration & Filings</div>
+              <div data-value="PF Return Filing Services" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">PF Return Filing Services</div>
+              <div data-value="Payroll Processing" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Payroll Processing</div>
               <div data-value="CFO Services" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">CFO Services</div>
-              <div data-value="Import & Export Code" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Import & Export Code</div>
+              
+              <!-- Other Services -->
+              <div data-value="Others" class="modal-dropdown-option px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-700 cursor-pointer transition-colors">Others</div>
             </div>
           </div>
         </div>
@@ -274,8 +255,8 @@
           id="submitBtn"
           type="submit"
           class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg
-                 hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50">
-          Submit Request
+                 hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
+          <span id="submitText">Submit Request</span>
         </button>
 
         <!-- Status -->
@@ -285,8 +266,14 @@
   </div>
 </div>
 
-<!-- ================= MODAL & FORM SCRIPTS ================= -->
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 <script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+  })();
+
   // Modal Functions
   function openConsultationModal() {
     const modal = document.getElementById('consultationModal');
@@ -295,20 +282,19 @@
       modal.querySelector('div.relative.scale-95').classList.remove('scale-95');
       modal.classList.add('opacity-100');
     }, 10);
-    document.body.style.overflow = 'hidden'; // Prevent body scroll
+    document.body.style.overflow = 'hidden';
   }
 
   function closeConsultationModal() {
     const modal = document.getElementById('consultationModal');
     modal.classList.add('hidden');
     modal.querySelector('div.relative').classList.add('scale-95');
-    document.body.style.overflow = 'auto'; // Restore body scroll
+    document.body.style.overflow = 'auto';
   }
 
   // Event Listeners
   document.getElementById('openConsultationModal')?.addEventListener('click', openConsultationModal);
 
-  // Close button listener (fixed by direct ID reference)
   document.getElementById('closeModalBtn')?.addEventListener('click', closeConsultationModal);
 
   // Close modal on outside click
@@ -325,10 +311,10 @@
     }
   });
 
-  // Form Submission (adapted from bookappointment.html - uses simulation; uncomment EmailJS for production)
   const form = document.getElementById("appointmentForm");
   const statusMsg = document.getElementById("statusMsg");
   const submitBtn = document.getElementById("submitBtn");
+  const submitText = document.getElementById("submitText");
 
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -337,43 +323,41 @@
       statusMsg.textContent = "Sending your request...";
       statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-blue-600";
       submitBtn.disabled = true;
+      submitText.textContent = "Sending...";
 
-      /*
-      // Uncomment for EmailJS integration (add script tag for emailjs-com to your page head)
-      // emailjs.init("YOUR_PUBLIC_KEY");
       emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "YOUR_SERVICE_ID",      // Replace with your EmailJS Service ID
+        "YOUR_TEMPLATE_ID",     // Replace with your EmailJS Template ID
         this
-      ).then(() => {
-        statusMsg.textContent = "Success! We'll contact you soon.";
-        statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-blue-600";
-        form.reset();
-        submitBtn.disabled = false;
-        setTimeout(closeConsultationModal, 2000); // Close modal after success
-      }).catch(() => {
-        statusMsg.textContent = "Error: Please try again later.";
-        statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-red-600";
-        submitBtn.disabled = false;
-      });
-      */
-
-      // Temporary demo simulation
-      setTimeout(() => {
-        statusMsg.textContent = "Success! We'll contact you soon.";
-        statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-blue-600";
-        form.reset();
-        // Reset custom dropdown
-        const selectedText = document.getElementById('modalSelectedText');
-        const serviceInput = document.getElementById('modalServiceInput');
-        if (selectedText) {
-          selectedText.textContent = '-- Select a Service --';
-          selectedText.className = 'text-gray-500';
+      ).then(
+        function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          statusMsg.textContent = "✓ Success! We'll contact you soon.";
+          statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-green-600";
+          
+          form.reset();
+          
+          const selectedText = document.getElementById('modalSelectedText');
+          const serviceInput = document.getElementById('modalServiceInput');
+          if (selectedText) {
+            selectedText.textContent = '-- Select a Service --';
+            selectedText.className = 'text-gray-500';
+          }
+          if (serviceInput) serviceInput.value = '';
+          
+          submitBtn.disabled = false;
+          submitText.textContent = "Submit Request";
+          
+          setTimeout(closeConsultationModal, 2000);
+        },
+        function(error) {
+          console.log('FAILED...', error);
+          statusMsg.textContent = "✗ Error: Please try again later.";
+          statusMsg.className = "text-center text-sm font-medium h-5 mt-3 text-red-600";
+          submitBtn.disabled = false;
+          submitText.textContent = "Submit Request";
         }
-        if (serviceInput) serviceInput.value = '';
-        submitBtn.disabled = false;
-        setTimeout(closeConsultationModal, 2000); // Close modal after success
-      }, 1500);
+      );
     });
   }
 
@@ -419,14 +403,17 @@
     }
   });
 
-  // Reset dropdown when modal closes
-  const originalClose = closeConsultationModal;
-  closeConsultationModal = function() {
-    if (modalDropdownOptions) {
-      modalDropdownOptions.classList.add('hidden');
-      modalDropdownArrow?.classList.remove('rotate-180');
-    }
-    originalClose();
-  };
+  // Mobile menu toggle
+  const mobileServiceBtn = document.getElementById('mobileServiceBtn');
+  const mobileServices = document.getElementById('mobileServices');
+  
+  if (mobileServiceBtn) {
+    mobileServiceBtn.addEventListener('click', function() {
+      mobileServices.classList.toggle('hidden');
+      const arrow = this.querySelector('span');
+      if (arrow) {
+        arrow.style.transform = mobileServices.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+      }
+    });
+  }
 </script>
-

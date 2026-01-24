@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | CA & Associates</title>
-  <!-- Tailwind via CDN (corrected URL) -->
-  <!-- Font Awesome CDN -->
+  <title>Contact Us | Mugilan Poonkundran & Co</title>
 
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
   <style>
@@ -24,7 +26,7 @@
         extend: {
           colors: {
             primary: '#0f172a',
-            accent: '#2563eb', /* Royal Blue */
+            accent: '#2563eb',
           }
         }
       }
@@ -45,7 +47,6 @@
         alt="Office Background" 
         class="w-full h-full object-cover"
       />
-      <!-- Subtle dark overlay for text readability -->
       <div class="absolute inset-0 bg-black/50"></div>
     </div>
 
@@ -73,7 +74,7 @@
         <h2 class="font-serif text-2xl sm:text-3xl font-bold text-primary mb-4 sm:mb-6">
           Office Information
         </h2>
-        <p class="text-slate-600 text-sm sm:text-lg mb-6 sm:mb-10 whitespace-normal sm:whitespace-nowrap">
+        <p class="text-slate-600 text-sm sm:text-lg mb-6 sm:mb-10">
           Please feel free to contact us or visit our office during working hours.
         </p>
 
@@ -166,7 +167,7 @@
           </div>
 
           <div>
-            <label class="block text-xs sm:text-sm font-semibold text-primary mb-1 sm:mb-2">Phone Number</label>
+            <label class="block text-xs sm:text-sm font-semibold text-primary mb-1 sm:mb-2">Phone Number *</label>
             <input type="tel" name="phone" required
               class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all text-sm sm:text-base"/>
           </div>
@@ -179,13 +180,13 @@
 
           <div>
             <label class="block text-xs sm:text-sm font-semibold text-primary mb-1 sm:mb-2">Message *</label>
-            <textarea name="message" rows="5" 
+            <textarea name="message" rows="5" required
               class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 sm:px-4 py-2.5 sm:py-3 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all resize-none text-sm sm:text-base"></textarea>
           </div>
 
-          <button type="submit"
-            class="w-full bg-primary text-white font-semibold py-3 sm:py-3.5 rounded-lg shadow-md hover:bg-slate-800 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base">
-            <span>Submit Inquiry</span>
+          <button type="submit" id="submitBtn"
+            class="w-full bg-primary text-white font-semibold py-3 sm:py-3.5 rounded-lg shadow-md hover:bg-slate-800 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed">
+            <span id="submitText">Submit Inquiry</span>
             <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
             </svg>
@@ -215,38 +216,66 @@
   <!-- ================= FOOTER CONTAINER ================= -->
   <div id="footer"></div>
 
-<script src="assets/js/loader.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Form handling logic logic preserved
-      const form = document.getElementById("contactForm");
-      const status = document.getElementById("statusMsg");
+  <script src="assets/js/loader.js"></script>
+  
+  <script>
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+    })();
 
-      if (form && status) {
-        form.addEventListener("submit", (e) => {
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contactForm");
+      const statusMsg = document.getElementById("statusMsg");
+      const submitBtn = document.getElementById("submitBtn");
+      const submitText = document.getElementById("submitText");
+
+      if (form && statusMsg) {
+        form.addEventListener("submit", function(e) {
           e.preventDefault();
           
-          status.textContent = "Sending your message...";
-          status.className = "text-sm text-center font-medium text-accent";
+          statusMsg.textContent = "Sending your message...";
+          statusMsg.className = "text-sm text-center font-medium text-accent";
+          submitBtn.disabled = true;
+          submitText.textContent = "Sending...";
 
-          setTimeout(() => {
-            status.textContent = "Thank you! We'll get back to you within 24 hours.";
-            status.className = "text-sm text-center font-medium text-blue-600";
-            form.reset();
-
-            setTimeout(() => {
-              status.textContent = "";
-            }, 5000);
-          }, 1500);
+          emailjs.sendForm(
+            "YOUR_SERVICE_ID",      // Replace with your EmailJS Service ID
+            "YOUR_TEMPLATE_ID",     // Replace with your EmailJS Template ID
+            this
+          ).then(
+            function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              
+              statusMsg.textContent = "✓ Thank you! We'll get back to you within 24 hours.";
+              statusMsg.className = "text-sm text-center font-medium text-green-600";
+              
+              form.reset();
+              
+              submitBtn.disabled = false;
+              submitText.textContent = "Submit Inquiry";
+              
+              setTimeout(() => {
+                statusMsg.textContent = "";
+              }, 5000);
+            },
+            function(error) {
+              console.log('FAILED...', error);
+              
+              statusMsg.textContent = "✗ Failed to send message. Please try again or contact us directly.";
+              statusMsg.className = "text-sm text-center font-medium text-red-600";
+              
+              submitBtn.disabled = false;
+              submitText.textContent = "Submit Inquiry";
+              
+              setTimeout(() => {
+                statusMsg.textContent = "";
+              }, 5000);
+            }
+          );
         });
       }
     });
   </script>
 
-      
-  
-
 </body>
 </html>
-
-
