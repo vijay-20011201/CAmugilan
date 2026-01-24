@@ -11,11 +11,11 @@
     <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 text-white">
       <!-- Left: Heading + Phone -->
       <div class="text-center md:text-left">
-        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
-          Have Any Question? We Can Help You..
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+          Have Any Question? <span class="block text-blue-200">We Can Help You.</span>
         </h2>
-        <p class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 text-blue-100">
-          Call Us +91 8870336446
+        <p class="text-base sm:text-lg md:text-xl mt-3 text-blue-100 font-medium">
+          Call Us: <a href="tel:+918870336446" class="hover:text-white transition-colors underline decoration-blue-400 decoration-2 underline-offset-4">+91 88703 36446</a>
         </p>
       </div>
 
@@ -31,8 +31,8 @@
   </div>
 </section>
 <!-- ================= MINIMAL FOOTER ================= -->
-<footer class="bg-[#172554] text-blue-50/80 py-10 sm:py-12 md:py-16 text-sm font-sans">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+<footer class="bg-[#172554] text-blue-50/80 py-12 sm:py-16 md:py-20 text-sm font-sans border-t border-blue-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 lg:gap-8">
    <!-- BRAND -->
 <div class="col-span-1 sm:col-span-2 lg:col-span-1">
   <div class="flex items-center gap-3 mb-4 sm:mb-6">
@@ -42,63 +42,72 @@
   <p class="leading-relaxed mb-6 text-xs sm:text-sm">
     Strategic financial leadership for the modern enterprise.
   </p>
-  <div class="flex gap-4">
+  <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
     <!-- LinkedIn -->
-    <a href="#" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/30 text-white flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all text-sm">
-      <i class="fab fa-linkedin-in"></i>
+    <a href="https://www.linkedin.com/company/mugilan-poonkundran-and-co" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/20 text-white flex items-center justify-center hover:bg-blue-600 hover:border-blue-500 hover:scale-110 transition-all duration-300 shadow-lg">
+      <i class="fab fa-linkedin-in text-lg"></i>
     </a>
-    <!-- X (Twitter) -->
-    <a href="#" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/30 text-white flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all text-sm">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <!-- Instagram -->
-    <a href="#" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/30 text-white flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all text-sm">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <!-- Facebook -->
-    <a href="#" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/30 text-white flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all text-sm">
-      <i class="fab fa-facebook-f"></i>
+    <!-- Phone -->
+    <a href="tel:+918870336446" aria-label="Call Us" class="w-10 h-10 rounded-full bg-white/5 border border-white/20 text-white flex items-center justify-center hover:bg-blue-600 hover:border-blue-500 hover:scale-110 transition-all duration-300 shadow-lg">
+      <i class="fa-solid fa-phone text-lg"></i>
     </a>
   </div>
 </div>
 
     <!-- SERVICES -->
     <div>
-      <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-xs">Services</h4>
-      <ul class="space-y-2 sm:space-y-3">
-        <li><a href="./gstregistration.html" class="hover:text-[#1d4ed8] transition-colors text-xs sm:text-sm">GST Registration</a></li>
-        <li><a href="./privatelimited.html" class="hover:text-[#1d4ed8] transition-colors text-xs sm:text-sm">PVT.LTD Registration</a></li>
-        <li><a href="./incometax.html" class="hover:text-[#1d4ed8] transition-colors text-xs sm:text-sm">Income Tax Audit & Assurance</a></li>
-        <li><a href="./cfoservice.html" class="hover:text-[#1d4ed8] transition-colors text-xs sm:text-sm">CFO Advisory</a></li>
+      <h4 class="text-white font-bold mb-5 sm:mb-6 uppercase tracking-wider text-sm border-b-2 border-blue-600 inline-block pb-1">Services</h4>
+      <ul class="space-y-3">
+        <li><a href="./gstregistration.html" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">GST Services</a></li>
+        <li><a href="./pfreturnfilling.html" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">PF Return Filing</a></li>
+        <li><a href="./incometax.html" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">Income Tax</a></li>
+        <li><a href="./corporatecompliance.html" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">Corporate Compliance</a></li>
+        <li><a href="./cfoservice.html" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">CFO</a></li>
       </ul>
     </div>
 
     <!-- COMPANY -->
     <div>
-      <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-xs">Company</h4>
-      <ul class="space-y-2 sm:space-y-3">
-        <li><a href="aboutus.html" class="hover:text-[#1d4ed8] transition-colors text-xs sm:text-sm">About Us</a></li>
-        <li><a href="./contact.html" class="hover:text-[#1d4ed8] transition-colors text-xs sm:text-sm">Contact</a></li>
-        <li><a href="#" class="hover:text-[#1d4ed8] transition-colors text-xs sm:text-sm">Privacy Policy</a></li>
+      <h4 class="text-white font-bold mb-5 sm:mb-6 uppercase tracking-wider text-sm border-b-2 border-blue-600 inline-block pb-1">Company</h4>
+      <ul class="space-y-3">
+        <li><a href="aboutus.html" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">About Us</a></li>
+        <li><a href="./contact.html" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">Contact</a></li>
+        <li><a href="#" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white hover:translate-x-1 transition-all duration-300 block text-sm">Terms of Service</a></li>
       </ul>
     </div>
 
     <!-- CONTACT -->
     <div>
-      <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-xs">Get in Touch</h4>
-      <p class="text-xs sm:text-sm text-white leading-relaxed">
-        No.26/1,National Highway Service Road,<br>
-        First Floor,(Near Tata Show Room)<br>
-        Kumudepalli,Hosur -635109
-      </p><br/>
-      <p class="mb-4 sm:mb-6 text-white text-xs sm:text-sm">+91 8870336446</p>
-      <p class="mb-2 text-white text-xs sm:text-sm">camugilan.in@gmail.com</p>
+      <h4 class="text-white font-bold mb-5 sm:mb-6 uppercase tracking-wider text-sm border-b-2 border-blue-600 inline-block pb-1">Get in Touch</h4>
+      <address class="not-italic space-y-4">
+        <div class="flex items-start gap-3">
+          <i class="fa-solid fa-location-dot mt-1 text-blue-400"></i>
+          <p class="text-sm text-blue-50/90 leading-relaxed">
+            No.26/1, National Highway Service Road,<br>
+            First Floor, (Near Tata Show Room)<br>
+            Kumudepalli, Hosur - 635109
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-phone text-blue-400"></i>
+          <a href="tel:+918870336446" class="text-sm text-white font-medium hover:text-blue-300 transition-colors">+91 88703 36446</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-envelope text-blue-400"></i>
+          <a href="mailto:camugilan.in@gmail.com" class="text-sm text-white hover:text-blue-300 transition-colors">camugilan.in@gmail.com</a>
+        </div>
+      </address>
     </div>
 
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-center items-center text-xs text-center md:text-left">
-    <p>&copy; 2026 designed With <span class="text-red-500 text-sm">❤</span> <a href="https://niyanitsolutions.com" target="_blank" class="hover:text-blue-400 transition-colors">Niyan IT Solutions</a>. All Rights Reserved.</p>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-12 sm:mt-16 pt-8 border-t border-blue-900/50 flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm text-center md:text-left gap-4">
+    <p class="text-blue-200/60">&copy; 2026 Mugilan Poonkundran & Co. All Rights Reserved.</p>
+    <p class="text-blue-200/60 flex items-center justify-center gap-1">
+      Designed with <span class="text-red-500 animate-pulse text-lg">❤</span> by 
+      <a href="https://niyanitsolutions.com" target="_blank" class="text-white font-medium hover:text-blue-300 transition-colors">Niyan IT Solutions</a>
+    </p>
   </div>
 </footer>
 

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comprehensive Audit and Assurance services including Statutory, Tax, and Internal Audits. Ensuring accuracy and compliance for your business.">
+  <meta name="keywords" content="Statutory Audit, Tax Audit, Internal Audit, Company Audit, Assurance Services, CA Audit Hosur">
+  <meta name="author" content="Mugilan Poonkundran & Co">
   <title>Audit & Assurance Services | Mugilan Poonkundran & Co</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -94,12 +97,12 @@
   </section>
 
 
-  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
+  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-blue-100 z-30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
-        <button data-section="overview" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Overview</button>
-        <button data-section="services" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Our Services</button>
-        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
+        <button data-section="overview" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Overview</button>
+        <button data-section="services" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Our Services</button>
+        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">FAQs</button>
       </div>
     </div>
   </nav>
@@ -141,7 +144,7 @@
         <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
 
         <!-- Card 1: Statutory Audit -->
         <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
@@ -231,6 +234,17 @@
           </p>
         </div>
 
+        <!-- Card 9: Trust Audit -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-building-columns text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Trust Audit – Form 10BB</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Mandatory audit report for charitable and religious trusts/institutions registered under Section 12AB or approved under Section 10(23C). We prepare and file Form 10BB ensuring compliance with Sections 11, 12, and 13.
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -277,7 +291,8 @@
               </svg>
             </summary>
             <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-              Statutory Audit is a legal requirement to verify financial statements, while Internal Audit is a voluntary process to evaluate internal controls, risk management, and operational efficiency. Internal Audit helps strengthen processes before statutory compliance.
+              Internal Audit evaluates a company’s internal controls, risk management, and operational efficiency to help management improve performance.
+Statutory Audit is a legal requirement to examine financial statements and ensure compliance with laws, providing an independent opinion to shareholders and regulators.
             </div>
           </details>
 
@@ -345,9 +360,9 @@
         });
 
         document.querySelectorAll("[data-section]").forEach(btn => {
-          btn.classList.remove("text-blue-700", "bg-blue-50");
+          btn.classList.remove("text-white", "bg-blue-700");
           if (btn.dataset.section === current) {
-            btn.classList.add("text-blue-700", "bg-blue-50");
+            btn.classList.add("text-white", "bg-blue-700");
           }
         });
       });

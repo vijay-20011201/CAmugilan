@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full suite of Corporate Compliance services in Hosur: Company Incorporation (Pvt Ltd, LLP, OPC), ROC filings, and Secretarial support.">
+  <meta name="keywords" content="Company Incorporation, ROC Filing, MCA Compliance, Private Limited Registration, Corporate Annual Filing, CA Hosur">
+  <meta name="author" content="Mugilan Poonkundran & Co">
+  <title>Corporate Compliances | Mugilan Poonkundran & Co</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { scrollbar-width: none; }
+
+    .gradient-title {
+      background: linear-gradient(to right, #1d4ed8, #2563eb);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, #1d4ed8, #3b82f6);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              400: '#60a5fa',
+              500: '#2563eb',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-white text-slate-800">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- HERO -->
+  <section class="relative min-h-[480px] pt-28 flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="assets/c.avif" alt="Corporate Compliances" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/50"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 text-white">
+      <nav class="text-sm text-white/70 mb-6 flex gap-2">
+        <a href="index.html" class="hover:text-blue-300">Home</a> /
+        <span class="text-blue-300">Corporate Compliances</span>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+        Corporate Compliances
+      </h1>
+
+      <p class="text-base sm:text-lg text-white/85 max-w-2xl">
+        Comprehensive incorporation and corporate compliance services ensuring full adherence to the Companies Act, 2013 and applicable regulatory requirements.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sticky Navigation -->
+  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-blue-100 z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
+        <button data-section="overview" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Overview</button>
+        <button data-section="incorporation" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Incorporation</button>
+        <button data-section="compliances" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Compliances</button>
+        <button data-section="commitment" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Our Commitment</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 py-12 sm:py-16 space-y-16 sm:space-y-20">
+
+    <!-- Overview Section -->
+    <section id="overview" class="max-w-4xl mx-auto">
+      <div class="text-center mb-10 sm:mb-12">
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Corporate Compliances</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-8 sm:p-10 border border-blue-100">
+        <p class="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
+          We provide <span class="text-blue-700 font-semibold">comprehensive incorporation and corporate compliance services</span>, including <span class="text-slate-800 font-medium">Section 8 Companies (Non-Profit Organisations)</span>, ensuring full compliance with the <span class="text-slate-800 font-medium">Companies Act, 2013</span> and applicable regulatory requirements.
+        </p>
+        <div class="flex items-start gap-3 bg-white/70 rounded-xl p-4 border border-blue-100">
+          <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-building text-lg"></i>
+          </div>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            From entity formation to ongoing statutory compliances, we provide <strong class="text-slate-700">end-to-end support</strong> for all your corporate needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Incorporation Services Section -->
+    <section id="incorporation">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="inline-block px-4 py-1.5 bg-blue-900 text-white text-xs font-semibold uppercase tracking-wider rounded-full mb-4">Entity Formation</span>
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Incorporation Services</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+        <!-- Card 1: Private Limited Company -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-building-columns text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Private Limited Company</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Complete incorporation services for Private Limited Companies with end-to-end compliance support.
+          </p>
+        </div>
+
+        <!-- Card 2: One Person Company -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-user-tie text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">One Person Company (OPC)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Incorporation and compliance for single-owner companies with limited liability benefits.
+          </p>
+        </div>
+
+        <!-- Card 3: LLP -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-handshake text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Limited Liability Partnership (LLP)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Formation and regulatory compliance for LLPs combining partnership flexibility with limited liability.
+          </p>
+        </div>
+
+        <!-- Card 4: Section 8 Company -->
+        <div class="service-card bg-white p-6 sm:p-7 rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-heart text-xl"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Section 8 Company (NGO)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Registration and compliance for Non-Profit Organisations under Section 8 of the Companies Act.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate Compliances Section -->
+    <section id="compliances" class="bg-gradient-to-br from-slate-50 to-blue-50 -mx-4 px-4 sm:px-8 py-12 sm:py-16 rounded-3xl">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="inline-block px-4 py-1.5 bg-blue-900 text-white text-xs font-semibold uppercase tracking-wider rounded-full mb-4">Statutory Requirements</span>
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Corporate & Statutory Compliances</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-5">
+        <!-- Compliance 1 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              1
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Annual ROC Compliances</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Filing of AOC-4 (Financial Statements) and MGT-7 / MGT-7A (Annual Return) with the Registrar of Companies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance 2 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              2
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Board & General Meeting Compliances</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Preparation of notices, agendas, minutes, and resolutions for Board Meetings and General Meetings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance 3 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              3
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Appointment, Resignation & Change of Directors / KMP</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Complete handling of director and Key Managerial Personnel changes including ROC filings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance 4 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              4
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Change in Registered Office, Share Capital & Object Clause</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Assistance with alterations in Memorandum and Articles of Association and related compliances.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance 5 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              5
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Share Allotment, Transfer & Related ROC Filings</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Complete support for share capital transactions and regulatory filings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance 6 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              6
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Maintenance of Statutory Registers & Corporate Records</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Proper maintenance of all statutory books and records as per Companies Act requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance 7 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              7
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Event-Based ROC Filings</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Timely filings of all event-based forms under the Companies Act, 2013.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance 8 -->
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-blue-600 shadow-md hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center shrink-0 font-bold text-lg">
+              8
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-2">Corporate Compliance Review, Advisory & Secretarial Support</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Comprehensive review and advisory services to ensure ongoing compliance and good governance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Commitment Section -->
+    <section id="commitment">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="inline-block px-4 py-1.5 bg-blue-900 text-white text-xs font-semibold uppercase tracking-wider rounded-full mb-4">Our Promise</span>
+        <h2 class="gradient-title text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Our Professional Commitment</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto grid sm:grid-cols-2 gap-5">
+        <!-- Commitment 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-blue-100">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-check-double text-lg"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Accurate Filings</h3>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Precise incorporation and statutory filings ensuring complete accuracy and compliance.
+          </p>
+        </div>
+
+        <!-- Commitment 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-blue-100">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-clock text-lg"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Timely Compliance</h3>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Proactive compliance monitoring to ensure all deadlines are met without fail.
+          </p>
+        </div>
+
+        <!-- Commitment 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-blue-100">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-user-graduate text-lg"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Expert Advisory</h3>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Professional guidance under Chartered Accountant supervision for all corporate matters.
+          </p>
+        </div>
+
+        <!-- Commitment 4 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-blue-100">
+          <div class="flex items-start gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-shield-halved text-lg"></i>
+            </div>
+            <h3 class="font-bold text-lg text-blue-900">Reliable Service</h3>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Confidential, reliable, and compliant service delivery you can trust.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-4xl mx-auto text-center py-10 sm:py-12 bg-blue-50 rounded-2xl px-6">
+      <h3 class="text-xl sm:text-2xl font-bold text-blue-900 mb-3">
+        Need Corporate Compliance Services?
+      </h3>
+      <p class="text-gray-600 mb-6 text-sm sm:text-base">Let us handle your incorporation and compliance needs with precision and expertise.</p>
+      <a href="./contact.html" class="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg">
+        Contact Us Today
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/loader.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      document.querySelectorAll("[data-section]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.getElementById(btn.dataset.section)?.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        document.querySelectorAll("section[id]").forEach(section => {
+          const sectionTop = section.offsetTop - 200;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll("[data-section]").forEach(btn => {
+          btn.classList.remove("text-white", "bg-blue-700");
+          if (btn.dataset.section === current) {
+            btn.classList.add("text-white", "bg-blue-700");
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Virtual CFO and financial advisory services in Hosur. Expert financial management, reporting, and strategic planning for growing businesses.">
+  <meta name="keywords" content="Virtual CFO, Financial Advisory, Strategic Finance, CFO Services, Outsourced CFO Hosur">
+  <meta name="author" content="Mugilan Poonkundran & Co">
   <title>Virtual CFO Services | Mugilan Poonkundran & Co</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -93,12 +96,12 @@
   </section>
 
   <!-- Sticky Navigation -->
-  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
+  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-blue-100 z-30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
-        <button data-section="overview" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Overview</button>
-        <button data-section="benefits" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Benefits</button>
-        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
+        <button data-section="overview" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Overview</button>
+        <button data-section="benefits" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Benefits</button>
+        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">FAQs</button>
       </div>
     </div>
   </nav>
@@ -328,9 +331,9 @@
         });
 
         document.querySelectorAll("[data-section]").forEach(btn => {
-          btn.classList.remove("text-blue-700", "bg-blue-50");
+          btn.classList.remove("text-white", "bg-blue-700");
           if (btn.dataset.section === current) {
-            btn.classList.add("text-blue-700", "bg-blue-50");
+            btn.classList.add("text-white", "bg-blue-700");
           }
         });
       });

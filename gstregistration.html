@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="End-to-end GST services in Hosur: Registration, Return Filing, Compliance, and Advisory. Expert support for GST notices and audits.">
+  <meta name="keywords" content="GST Registration, GSTR Filing, GST Compliance, GST Audit, Goods and Services Tax, GST Consultant Hosur">
+  <meta name="author" content="Mugilan Poonkundran & Co">
   <title>GST Services | Mugilan Poonkundran & Co</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -95,12 +98,12 @@
   </section>
 
   <!-- Sticky Navigation -->
-  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-gray-200 z-30 shadow-sm">
+  <nav class="sticky top-[64px] sm:top-[80px] bg-white/95 backdrop-blur-md border-b border-blue-100 z-30 shadow-sm">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-hide">
-        <button data-section="gst-services" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">GST Services</button>
-        <button data-section="specialized" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">Specialized</button>
-        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-gray-500 hover:text-gray-900 hover:bg-gray-100">FAQs</button>
+        <button data-section="gst-services" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">GST Services</button>
+        <button data-section="specialized" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">Specialized</button>
+        <button data-section="faqs" class="px-4 py-3 text-sm font-medium whitespace-nowrap rounded-lg transition-all text-slate-600 hover:text-blue-600 hover:bg-blue-50">FAQs</button>
       </div>
     </div>
   </nav>
@@ -143,7 +146,7 @@
             <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-1</strong> – Outward supplies</span></li>
             <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-3B</strong> – Monthly summary</span></li>
             <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-9</strong> – Annual return</span></li>
-            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-9C</strong> – CA certified</span></li>
+            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">•</span> <span><strong class="text-slate-700">GSTR-9C</strong> – Annual GST reconciliation statement</span></li>
           </ul>
         </div>
 
@@ -287,7 +290,7 @@
               </svg>
             </summary>
             <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-              Businesses with turnover exceeding Rs. 40 lakhs (goods) or Rs. 20 lakhs (services) must register. Also, those paying tax under reverse charge, interstate suppliers, e-commerce operators, and businesses making supplies to SEZ require registration irrespective of turnover.
+              Generally, businesses must register for GST if their annual turnover exceeds ₹40 lakhs for the exclusive supply of goods or ₹20 lakhs for services and mixed supplies.(Varies to some states). Section 24 Compulsory Registration & Section 23 Exemption from registration need to be checked case specific
             </div>
           </details>
 
@@ -323,7 +326,7 @@
               </svg>
             </summary>
             <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-              The Composition Scheme offers simplified compliance and reduced tax rates for small taxpayers with turnover up to Rs. 1.5 crore. However, composition dealers cannot claim ITC, make interstate supplies, or issue tax invoices.
+             The Composition Scheme under Section 10(1) & 10(2A) of the CGST Act, 2017, simplifies GST compliance for small taxpayers. Eligible businesses pay tax at a fixed percentage of turnover instead of regular rates. Key features include quarterly payments (Form CMP-08) and an annual return (Form GSTR-4). However, taxpayers under this scheme cannot claim Input Tax Credit (ITC), cannot collect tax from their customers, and are generally barred from making inter-State outward supplies.
             </div>
           </details>
 
@@ -335,7 +338,7 @@
               </svg>
             </summary>
             <div class="px-5 pb-4 text-gray-600 text-sm leading-relaxed">
-              Letter of Undertaking (LUT) allows exporters and SEZ suppliers to make zero-rated supplies without paying IGST. It must be filed in Form GST RFD-11 before the start of each financial year.
+             A Letter of Undertaking (LUT) is a document furnished under Rule 96A of the CGST Rules, 2017, by a registered person to make zero-rated supplies (i.e., exports or supplies to a Special Economic Zone) without the payment of Integrated GST (IGST). It serves as an undertaking to the government that the exporter will fulfill all the requirements of export, failing which they will pay the applicable IGST along with interest.
             </div>
           </details>
         </div>
@@ -379,9 +382,9 @@
         });
 
         document.querySelectorAll("[data-section]").forEach(btn => {
-          btn.classList.remove("text-blue-700", "bg-blue-50");
+          btn.classList.remove("text-white", "bg-blue-700");
           if (btn.dataset.section === current) {
-            btn.classList.add("text-blue-700", "bg-blue-50");
+            btn.classList.add("text-white", "bg-blue-700");
           }
         });
       });
